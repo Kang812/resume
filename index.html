@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>변강원 | AI &amp; Deep Learning Engineer</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Linux와 Python을 주력으로 다루며, PyTorch 기반의 컴퓨터 비전, 영상처리 및 LLM을 다루는 딥러닝 엔지니어 변강원의 이력서 웹페이지입니다.">
+  <meta name="keywords" content="딥러닝, 인공지능, PyTorch, 컴퓨터비전, 영상처리, LLM, LangGraph, 로킷헬스케어, 변강원">
+  <meta name="author" content="변강원">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="변강원 | AI &amp; Deep Learning Engineer">
+  <meta property="og:description" content="PyTorch 기반 컴퓨터 비전 및 LLM 개발 역량을 가진 딥러닝 엔지니어 변강원의 포트폴리오 이력서입니다.">
+  <meta property="og:type" content="website">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Inter:ital,wght@0,300..700;1,300..700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=1.2">
+</head>
+<body class="dark-theme">
+
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle" class="theme-toggle-btn" aria-label="화면 테마 변경">
+    <!-- Moon Icon -->
+    <svg id="theme-moon" class="theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+    <!-- Sun Icon -->
+    <svg id="theme-sun" class="theme-icon hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </button>
+
+  <div class="bento-container">
+    
+    <!-- BOX 1: HERO PROFILE (Span 5) -->
+    <header class="bento-card hero-card col-5">
+      <div class="profile-header-group">
+        <div class="name-meta">
+          <h1 class="hero-name">변강원</h1>
+          <p class="hero-title">딥러닝 엔지니어</p>
+          <p class="hero-subtitle">Deep Learning / AI Engineer</p>
+        </div>
+      </div>
+      
+      <div class="divider-glow"></div>
+      
+      <ul class="meta-grid">
+        <li>
+          <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <span class="meta-label">1992년생 (남, 33세)</span>
+        </li>
+        <li>
+          <a href="tel:010-4031-8923" class="meta-link">
+            <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span class="meta-value">010-4031-8923</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:bgw2001@gmail.com" class="meta-link">
+            <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span class="meta-value">bgw2001@gmail.com</span>
+          </a>
+        </li>
+        <li>
+          <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span class="meta-label">경기 광주시 오포읍</span>
+        </li>
+        <li>
+          <a href="https://github.com/Kang812" target="_blank" rel="noopener noreferrer" class="meta-link">
+            <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            <span class="meta-value">github.com/Kang812</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.miricanvas.com/ko/v/1o5mmt" target="_blank" rel="noopener noreferrer" class="meta-link">
+            <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            <span class="meta-value">미리캔버스 포트폴리오</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+    
+    <!-- BOX 2: BIO INTRO (Span 7) -->
+    <section class="bento-card intro-card col-7">
+      <h2 class="card-title">전문가 소개</h2>
+      <div class="quote-decorator">“</div>
+      <p class="bio-text">
+        Linux와 Python을 주력으로 다루며, <strong>PyTorch 기반의 컴퓨터 비전 및 영상처리 기술</strong>에 능통합니다. 이미지 프로세싱과 딥러닝 모델을 활용한 의료 영상 분석 및 진단 시스템 연구 개발을 진행해 왔습니다. 최근에는 LLM(LangGraph)을 접목하여 실무 비즈니스 문제를 해결하고 있습니다. 항상 성실함과 열정을 바탕으로 기술적 도전 과제를 해결하고 회사의 성장에 기여하고자 합니다.
+      </p>
+      
+      <div class="bio-stat-grid">
+        <div class="stat-item">
+          <span class="stat-num">4.5</span>
+          <span class="stat-label">R&amp;D 경력 (년)</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">15+</span>
+          <span class="stat-label">수행 프로젝트 수</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">보유 AI 특화 도메인</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOX 3: TECH SKILLS (Span 12) -->
+    <section class="bento-card skills-card col-12">
+      <h2 class="card-title">기술 스택</h2>
+      
+      <div class="skill-category">
+        <h3>Core Engine</h3>
+        <div class="skill-bar-item">
+          <div class="skill-bar-info">
+            <span>Python / PyTorch</span>
+            <span>중고급</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-bar" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-info">
+            <span>컴퓨터비전 &amp; OpenCV</span>
+            <span>중고급</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-bar" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-info">
+            <span>Linux &amp; CLI</span>
+            <span>초중급</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-bar" style="width: 60%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Other Skills</h3>
+        <div class="tag-cloud">
+          <span class="tag">Linux</span>
+          <span class="tag">Python</span>
+          <span class="tag">R&D</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Deep Learning</span>
+          <span class="tag">컴퓨터비전</span>
+          <span class="tag">OpenCV</span>
+          <span class="tag">이미지프로세싱</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">EDA</span>
+          <span class="tag">영상처리</span>
+          <span class="tag">알고리즘</span>
+          <span class="tag">Docker</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">LangGraph</span>
+          <span class="tag">VectorDB (Qdrant)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOX 6: EDUCATION & CERTIFICATIONS (Span 12) -->
+    <section class="bento-card edu-cert-card col-12">
+      <h2 class="card-title">학력 및 자격</h2>
+      
+      <div class="vertical-group">
+        <div class="group-section">
+          <h3>학력 사항</h3>
+          <div class="edu-box">
+            <span class="edu-year">2016 - 2018</span>
+            <h4>연세대학교(원주) 정보통계학과</h4>
+            <p>졸업 | 편입 | 학점 3.82 / 4.3</p>
+          </div>
+          <div class="edu-box">
+            <span class="edu-year">2012 - 2015</span>
+            <h4>우석대학교 실버복지학과</h4>
+            <p>자퇴 | 복수전공: 대체의학과 | 학점 4.19 / 4.5</p>
+          </div>
+        </div>
+        
+        <div class="divider-glow"></div>
+        
+        <div class="group-section">
+          <h3>자격 및 병역</h3>
+          <ul class="cert-bullets">
+            <li>
+              <strong>데이터분석준전문가 (ADsP)</strong>
+              <span>한국데이터산업진흥원 (2020.12)</span>
+            </li>
+            <li>
+              <strong>MOS Excel 2007 Expert</strong>
+              <span>Microsoft (2013.06)</span>
+            </li>
+            <li>
+              <strong>육군 병장 만기전역</strong>
+              <span>2013.10 ~ 2015.07</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOX 4: WORK EXPERIENCE (Span 12) -->
+    <section class="bento-card experience-card col-12">
+      <h2 class="card-title">경력 사항 <span class="badge-total">총 4년 6개월</span></h2>
+      
+      <div class="static-timeline">
+        
+        <!-- Experience 1 -->
+        <div class="exp-timeline-item">
+          <div class="exp-marker"></div>
+          <div class="exp-meta">
+            <span class="exp-date">2025.10 ~ 재직 중 (9개월)</span>
+            <h3 class="exp-company">로킷헬스케어 (Rokit Healthcare)</h3>
+            <p class="exp-position">AI 연구팀 / 사원 (팀원) | 서울 | 현재 연봉: 5,000만 원</p>
+            <p class="exp-summary">디지털 헬스케어 애플리케이션 'AI-KidneyGen' 프로젝트 PM(기획/관리) 및 핵심 AI 기능·백엔드 API 엔드투엔드(End-to-End) 개발. 바이오마커 기반 질환 예측 모델 연구.</p>
+          </div>
+          
+          <div class="exp-projects">
+            <div class="exp-project-box">
+              <span class="project-role">PM &amp; 개발</span>
+              <h4>1. AI-KidneyGen 서비스 총괄 기획 및 API·AI 기능 개발</h4>
+              <ul class="project-bullets">
+                <li><strong>PM 역량:</strong> 제품 기획, 요구사항 정의 및 개발 로드맵 관리 주도</li>
+                <li><strong>LLM &amp; 지식 그래프 추천:</strong> FastAPI를 활용해 백엔드 API를 구축하고, 사용자 취향(설문) 데이터와 영양 성분을 연계한 지식 그래프(Knowledge Graph) 기반 LLM 맞춤형 음식 추천 시스템 개발</li>
+                <li><strong>OCR 자동 입력:</strong> 건강검진 결과지(사진/PDF) 업로드 시 데이터를 추출하여 유저 프로필에 자동 반영하는 OCR 시스템 파이프라인 개발</li>
+                <li><strong>멀티모달 음식 검색:</strong> 이미지 및 텍스트 기반 검색 기능 구현 (이미지 내 음식 객체 Detection 후 Multi-class Classification을 거쳐 검색하는 하이브리드 로직 설계)</li>
+                <li><strong>기술 스택:</strong> FastAPI, Python, LLM, Knowledge Graph, OCR, Object Detection, Classification</li>
+              </ul>
+            </div>
+            
+            <div class="exp-project-box" style="margin-top: 1rem;">
+              <h4>2. Kidney Report Action Plan 설계 및 데이터 분석</h4>
+              <ul class="project-bullets">
+                <li><strong>건강검진 데이터 분석:</strong> 대규모 건강검진 데이터를 통계적으로 분석하여 연령·성별에 따른 신부전 발병 밀접 연관 항목 도출</li>
+                <li><strong>액션 플랜 설계:</strong> 분석 결과를 바탕으로 개인 맞춤형 건강 가이드라인을 제공하는 Rule-based 데이터 액션 플랜(Action Plan) 알고리즘 설계 및 시스템 반영</li>
+              </ul>
+            </div>
+
+            <div class="exp-project-box" style="margin-top: 1rem;">
+              <span class="project-role">개발</span>
+              <h4>3. 췌장암 예측 및 단백 바이오마커(Biomarker) 분석 모델 개발</h4>
+              <ul class="project-bullets">
+                <li><strong>바이오마커 분석:</strong> 대표적 췌장암 마커인 CA 19-9를 포함한 10종 이상의 단백 바이오마커 데이터의 상관관계 및 유의성 분석 진행</li>
+                <li><strong>예측 모델 성능 검증:</strong> 암 발병과 가장 연관성이 높은 핵심 바이오마커 리스트를 추출(Feature Selection)하고, 이를 기반으로 한 췌장암 분류/예측 머신러닝 모델 학습 및 성능 검증</li>
+                <li><strong>기술 스택:</strong> Python, Scikit-learn, Data Analysis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Experience 2 -->
+        <div class="exp-timeline-item">
+          <div class="exp-marker"></div>
+          <div class="exp-meta">
+            <span class="exp-date">2024.06 ~ 2025.09 (1년 4개월)</span>
+            <h3 class="exp-company">크래스콤 (Classcom)</h3>
+            <p class="exp-position">R&amp;D 연구개발본부 / 연구원 (팀원) | 경기 | 최종 연봉: 4,440만 원</p>
+            <p class="exp-summary">X-ray 및 의료 영상을 활용한 Computer Vision 기반 근골격계 질환 진단 AI 모델 연구 개발 및 생성형 AI 파이프라인 구축</p>
+          </div>
+          
+          <div class="exp-projects">
+            <div class="exp-project-box">
+              <h4>1. Stable Diffusion 기반 의료 영상 합성 연구 (Generative AI)</h4>
+              <ul class="project-bullets">
+                <li><strong>합성 이미지 생성:</strong> Stable Diffusion 모델을 활용하여 X-ray 무릎(Knee) 영상 기반의 하지 전장(Full Lower Limb) 이미지 생성 연구 수행</li>
+                <li><strong>데이터 증강 검증:</strong> 의료 데이터 부족 문제를 해결하기 위한 고품질 데이터 증강(Data Augmentation) 및 생성 파이프라인 검증</li>
+              </ul>
+            </div>
+            
+            <div class="exp-project-box" style="margin-top: 1rem;">
+              <h4>2. 하지 전장 및 무릎 영상 기반 LLA 측정 모델 개발 및 파이프라인 개선</h4>
+              <ul class="project-bullets">
+                <li><strong>LLA 측정 자동화:</strong> 딥러닝(Deep Learning) 기반의 하지 전장 및 무릎 X-ray 영상에서 LLA(Lower Limb Alignment, 하지 정렬 지표) 자동 측정 모델 개발</li>
+                <li><strong>엔드투엔드 개선:</strong> 기존 알고리즘의 비효율성을 개선하여 데이터 처리 및 분석 엔드투엔드 파이프라인 속도/정확도 고도화</li>
+              </ul>
+            </div>
+            
+            <div class="exp-project-box" style="margin-top: 1rem;">
+              <h4>3. 무릎 관절염 등급(Knee Grade) 예측 Confidence Level 연구</h4>
+              <ul class="project-bullets">
+                <li><strong>신뢰 수준 산출:</strong> 무릎 관절염 변형 등급(KL Grade 등) 예측 모델의 결과 신뢰도를 확보하기 위한 Confidence Level(신뢰 수준) 산출 알고리즘 연구</li>
+                <li><strong>불확실성 정량화:</strong> 의료 AI의 임상 적용을 위한 AI 모델의 불확실성(Uncertainty) 정량화 및 분석</li>
+              </ul>
+            </div>
+            
+            <div class="exp-project-box" style="margin-top: 1rem;">
+              <h4>4. Knee Joint Segmentation 모델 개발</h4>
+              <ul class="project-bullets">
+                <li><strong>관절 영역 자동 분할:</strong> 정밀한 관절 영역 분석 및 진단 보조를 위한 무릎 관절(Knee Joint) 영역 자동 분할(Segmentation) 딥러닝 모델 연구 개발</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Experience 3 -->
+        <div class="exp-timeline-item">
+          <div class="exp-marker"></div>
+          <div class="exp-meta">
+            <span class="exp-date">2022.01 ~ 2024.05 (2년 5개월)</span>
+            <h3 class="exp-company">에이비스 (AVIS)</h3>
+            <p class="exp-position">R&amp;D 연구개발본부 / 연구원 (팀원, 2년차) | 서울 | 최종 연봉: 3,462만 원</p>
+            <p class="exp-summary">Computer Vision(Detection, Segmentation, Augmentation) 기반 AI 모델 연구 개발 및 도메인 특화 데이터 구축 사업 총괄</p>
+          </div>
+          
+          <div class="exp-projects">
+            <div class="exp-project-box">
+              <h4>1. Brain Tumor Segmentation 모델 및 No-code 파이프라인 개발 (2023)</h4>
+              <ul class="project-bullets">
+                <li><strong>Instance Segmentation 모델:</strong> Molpack Bio 데이터 기반 4개 클래스(Tumor, Necrosis, Mitosis, MVP) Instance Segmentation 모델 개발</li>
+                <li><strong>No-code 파이프라인 구축:</strong> 비개발자용 데이터 입력, 모델 훈련, Inference 엔드투엔드 No-code 자동화 시스템 구축</li>
+              </ul>
+            </div>
+            
+            <div class="exp-project-box" style="margin-top: 1rem;">
+              <h4>2. 스마트팜 '언제딸까' 앱 - 딸기 숙도 진단 알고리즘 개발 (2022)</h4>
+              <ul class="project-bullets">
+                <li><strong>객체 검출 및 ROI 추출:</strong> 모바일 서비스용 Instance Segmentation 기반 실시간 딸기 객체 검출 및 ROI 추출</li>
+                <li><strong>숙도 정량화 알고리즘:</strong> 예측 영역의 색상 데이터 및 이미지 특성 기반 숙도 정량화 자체 알고리즘 설계 및 구현</li>
+              </ul>
+            </div>
+            
+            <div class="exp-project-box" style="margin-top: 1rem;">
+              <h4>3. 바이오칩 세포 분석을 위한 ATG Cell Detection 모델 개발 (2022)</h4>
+              <ul class="project-bullets">
+                <li><strong>미세 세포 검출:</strong> 바이오칩 내 미세 세포 검출 및 Multi-class Classification 모델 연구 개발</li>
+              </ul>
+            </div>
+            
+            <div class="exp-project-box" style="margin-top: 1rem;">
+              <h4>4. 정부 및 민간 데이터 구축 AI 모델 개발 (2022 ~ 2023)</h4>
+              <ul class="project-bullets">
+                <li><strong>[한국마사회(2023)]</strong> 말 신체 부위별 상태 인식을 위한 특화 모델 5종 개발</li>
+                <li><strong>[교통사고(2023)]</strong> 자율주행 환경용 객체(차량, 버스, 횡단보도, 신호등) Detection 모델 개발</li>
+                <li><strong>[스마트축사(2023)]</strong> 축산 자동화를 위한 객체(착유 젖소, 병아리, 닭) Detection 모델 개발</li>
+                <li><strong>[트랜데코(2022)]</strong> 가구 인식을 위한 Object Detection 모델 개발</li>
+              </ul>
+            </div>
+            
+            <div class="exp-project-box" style="margin-top: 1rem;">
+              <h4>5. 의료 Grand Challenge (Tiger) 참여 (2022)</h4>
+              <ul class="project-bullets">
+                <li><strong>데이터 증강 프로세스:</strong> 고해상도 Whole Slide Image(WSI)의 예측 성능 향상을 위한 도메인 특화 데이터 증강(Data Augmentation) 프로세스 주도</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- BOX 9: CAREER DESCRIPTION (Span 12) -->
+    <section class="bento-card career-desc-card col-12">
+      <h2 class="card-title">경력기술서</h2>
+      
+      <div class="static-career-description">
+        
+        <!-- 1. 로킷헬스케어 -->
+        <div class="desc-company-section">
+          <h3 class="desc-company-title">로킷헬스케어 (Rokit Healthcare) | AI 연구팀 사원 (2025.10 ~ 재직 중)</h3>
+          
+          <table class="career-desc-table">
+            <thead>
+              <tr>
+                <th>프로젝트명</th>
+                <th>역할 및 담당 업무</th>
+                <th>사용 기술 스택</th>
+                <th>주요 수행 성과</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>AI-KidneyGen 서비스 개발 및 총괄 기획 (PM &amp; 개발)</strong></td>
+                <td>
+                  <ul>
+                    <li>제품 기획, 요구사항 정의 및 개발 로드맵 총괄 관리</li>
+                    <li>FastAPI 기반 백엔드 API 및 핵심 AI 기능 엔드투엔드 설계</li>
+                  </ul>
+                </td>
+                <td>FastAPI, Python, LLM, Knowledge Graph, OCR, Object Detection</td>
+                <td>
+                  <ul>
+                    <li>LangGraph 도입으로 사용자 신장 기능(eGFR), 영양상태 등을 연계한 LLM 맞춤형 음식 추천 API 설계</li>
+                    <li>Object Detection 및 Vector DB(Qdrant)를 활용한 유사 음식 검색 파이프라인 개발</li>
+                    <li>건강검진 결과지 분석용 OCR 파이프라인 구축 및 App Store 성공적 런칭</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Kidney Report Action Plan 설계 및 데이터 분석</strong></td>
+                <td>
+                  <ul>
+                    <li>대규모 건강검진 데이터 분석 및 유의 인자 도출</li>
+                    <li>개인 맞춤형 건강 가이드라인 규칙 기반 알고리즘 설계</li>
+                  </ul>
+                </td>
+                <td>Python, Pandas, Data Analysis, Rule-based Algorithm</td>
+                <td>
+                  <ul>
+                    <li>연령 및 성별에 따른 신부전 발병 밀접 연관 항목 도출</li>
+                    <li>분석 결과와 개인 맞춤 액션 플랜 연동 알고리즘 설계 및 시스템 반영</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>췌장암 예측 및 단백 바이오마커 분석 모델 개발</strong></td>
+                <td>
+                  <ul>
+                    <li>CA 19-9 등 10종 바이오마커 데이터의 상관관계 분석</li>
+                    <li>Feature Selection을 통한 핵심 마커 추출 및 ML 예측 모델 개발</li>
+                  </ul>
+                </td>
+                <td>Python, Scikit-learn, Data Analysis</td>
+                <td>
+                  <ul>
+                    <li>췌장암 발병 밀접 마커 추출로 모델의 정밀도 및 신뢰도 확보</li>
+                    <li>Scikit-learn 기반 암 분류/예측 모델 학습 및 교차 성능 검증 완료</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 2. 크래스콤 -->
+        <div class="desc-company-section" style="margin-top: 3rem;">
+          <h3 class="desc-company-title">크래스콤 (Classcom) | R&amp;D 연구개발본부 연구원 (2024.06 ~ 2025.09)</h3>
+          
+          <table class="career-desc-table">
+            <thead>
+              <tr>
+                <th>프로젝트명</th>
+                <th>역할 및 담당 업무</th>
+                <th>사용 기술 스택</th>
+                <th>주요 수행 성과</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Stable Diffusion 기반 의료 영상 합성 연구 (Generative AI)</strong></td>
+                <td>
+                  <ul>
+                    <li>Stable Diffusion을 활용한 X-ray 이미지 생성 파이프라인 설계</li>
+                    <li>의료 데이터 합성 유효성 및 고품질 데이터 증강 프로세스 검증</li>
+                  </ul>
+                </td>
+                <td>Stable Diffusion, Python, PyTorch, Generative AI</td>
+                <td>
+                  <ul>
+                    <li>Knee(무릎) 국소 이미지로부터 Full lower limb(하지 전장) 이미지 합성 연구 수행</li>
+                    <li>의료 데이터 부족 현상을 극복하기 위한 생성 알고리즘 유효성 확보</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>하지 전장 LLA 측정 모델 개발 및 파이프라인 개선</strong></td>
+                <td>
+                  <ul>
+                    <li>딥러닝 기반 하지 전장 및 무릎 X-ray 이미지 정렬 지표 측정</li>
+                    <li>기존 이미지 분석 파이프라인의 비효율 알고리즘 개선</li>
+                  </ul>
+                </td>
+                <td>PyTorch, Deep Learning, OpenCV, Computer Vision</td>
+                <td>
+                  <ul>
+                    <li>X-ray 이미지에서 LLA(Lower Limb Alignment) 지표를 자동 측정하는 딥러닝 모델 개발</li>
+                    <li>분석 및 전처리 엔드투엔드 파이프라인 연산 속도 및 측정 정확도 고도화</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>무릎 관절염 등급(Knee Grade) 예측 Confidence Level 연구</strong></td>
+                <td>
+                  <ul>
+                    <li>무릎 관절염 변형 등급(KL Grade) 예측 결과의 불확실성 정량화</li>
+                    <li>신뢰 수준(Confidence Level) 산출 자체 알고리즘 연구</li>
+                  </ul>
+                </td>
+                <td>Python, Deep Learning, Uncertainty Quantification</td>
+                <td>
+                  <ul>
+                    <li>의료 AI의 임상 적용을 위한 AI 모델의 예측 결과 신뢰도 측정 알고리즘 설계</li>
+                    <li>예측 확률 분포 분석을 통해 실제 임상 의사 결정 보조용 불확실성 지표 도출</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Knee Joint Segmentation 모델 개발</strong></td>
+                <td>
+                  <ul>
+                    <li>관절 영역 자동 분할 모델 연구 및 데이터셋 레이블링 기준 정립</li>
+                    <li>정밀한 관절 영역 분석용 딥러닝 Segmentation 모델 설계</li>
+                  </ul>
+                </td>
+                <td>PyTorch, Semantic/Instance Segmentation, Deep Learning</td>
+                <td>
+                  <ul>
+                    <li>관절 영역의 미세 픽셀 단위까지 자동 분할하여 의사 진단 보조 정밀도 확보</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 3. 에이비스 -->
+        <div class="desc-company-section" style="margin-top: 3rem;">
+          <h3 class="desc-company-title">에이비스 (AVIS) | R&amp;D 연구개발본부 연구원 (2022.01 ~ 2024.05)</h3>
+          
+          <table class="career-desc-table">
+            <thead>
+              <tr>
+                <th>프로젝트명</th>
+                <th>역할 및 담당 업무</th>
+                <th>사용 기술 스택</th>
+                <th>주요 수행 성과</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Brain Tumor Segmentation 모델 및 No-code 파이프라인 개발</strong></td>
+                <td>
+                  <ul>
+                    <li>뇌 종양 관련 4개 클래스 감지 Instance Segmentation 모델 설계</li>
+                    <li>비개발자를 위한 데이터 입력, 학습, 추론 파이프라인 구축</li>
+                  </ul>
+                </td>
+                <td>PyTorch, Instance Segmentation, Python, No-code Pipeline</td>
+                <td>
+                  <ul>
+                    <li>Tumor, Necrosis, Mitosis, MVP 4개 클래스 분할 모델 개발</li>
+                    <li>사용이 용이한 엔드투엔드 No-code 자동화 시스템을 완성하여 파트너 연구원 편의성 확보</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>스마트팜 딸기 숙도 진단 알고리즘 개발</strong></td>
+                <td>
+                  <ul>
+                    <li>모바일 환경용 실시간 딸기 객체 검출 및 ROI 추출</li>
+                    <li>색상 데이터 분석을 통한 정량적 숙도 측정 알고리즘 설계</li>
+                  </ul>
+                </td>
+                <td>PyTorch, OpenCV, Image Processing, Color Quantification</td>
+                <td>
+                  <ul>
+                    <li>'언제딸까' 앱에 탑재될 모바일용 Instance Segmentation 모델 적용</li>
+                    <li>검출 영역의 컬러 분포 데이터를 분석하여 익은 정도를 수치화하는 자체 판단 알고리즘 구현</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>바이오칩 ATG Cell Detection 모델 개발</strong></td>
+                <td>
+                  <ul>
+                    <li>바이오칩 내 미세 세포 검출 및 다중 분류 모델 학습</li>
+                  </ul>
+                </td>
+                <td>PyTorch, Object Detection, Multi-class Classification</td>
+                <td>
+                  <ul>
+                    <li>미세 세포들의 실시간 정밀 카운팅 및 클래스 분류를 완료하여 바이오 분석 신뢰도 향상</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>정부 및 민간 데이터 구축 AI 모델 개발 (총괄)</strong></td>
+                <td>
+                  <ul>
+                    <li>다양한 정부 데이터 구축 사업용 AI 모델 4개 도메인 총괄 개발</li>
+                  </ul>
+                </td>
+                <td>PyTorch, Python, Object Detection, Classification</td>
+                <td>
+                  <ul>
+                    <li>[한국마사회] 말 신체 부위별 상태 인식 특화 모델 5종 개발</li>
+                    <li>[교통사고] 자율주행 객체(차량, 횡단보도, 신호등 등) 감지 모델 개발</li>
+                    <li>[스마트축사] 축산 자동화용 젖소 및 병아리 탐지 모델 개발</li>
+                    <li>[트랜데코] 가구 인식을 위한 Object Detection 모델 개발</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>의료 Grand Challenge (Tiger) 참여</strong></td>
+                <td>
+                  <ul>
+                    <li>고해상도 Whole Slide Image(WSI) 분석 모델 개발 기여</li>
+                  </ul>
+                </td>
+                <td>Data Augmentation, Image Processing, PyTorch</td>
+                <td>
+                  <ul>
+                    <li>학습 성능 향상을 위한 도메인 맞춤형 데이터 증강(Data Augmentation) 프로세스 주도</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BOX 5: SELF-INTRODUCTION (Span 12) -->
+    <section class="bento-card cover-letter-card col-12">
+      <h2 class="card-title">자기소개서</h2>
+      
+      <div class="static-cover-letter">
+        <!-- Section 1 -->
+        <div class="letter-section">
+          <h3>지원 동기</h3>
+          <p>
+            지난 4년 6개월 동안 딥러닝 엔지니어로서 의료 영상뿐만 아니라 다양한 도메인에서 Object Detection, Segmentation, Keypoint Detection, 그리고 최근에는 Stable Diffusion과 환자의 메타 데이터 및 X-ray 영상을 결합하여 예후를 예측하는 비전 프로젝트들을 깊이 있게 경험했습니다. 이를 통해 모델의 성능을 향상시키고 실무 문제를 해결하는 능력을 고루 갖추어 왔습니다.
+          </p>
+          <p>
+            여기에 안주하지 않고, 최근 빠르게 변화하는 LLM과 Vision-LLM 기술에도 깊은 관심을 가지고 다양한 오픈소스 및 Hugging Face 모델들을 개인적으로 연구하고 학습해왔습니다. 그 결과 로킷헬스케어에서 LangGraph 기반의 추천 엔진 설계나 멀티 모달 AI 솔루션 기획 등을 성공적으로 완수할 수 있었습니다.
+          </p>
+          <p>
+            제가 축적해온 영상 처리 및 생성, LLM 융합 기술과 프로젝트 관리 경험은 귀사의 비즈니스 성장에 확실하게 기여할 수 있을 것이라 자부합니다. 회사의 비전 달성과 저 개인의 기술적 성장이 시너지를 내며 함께 나아갈 수 있기를 희망합니다.
+          </p>
+        </div>
+        
+        <!-- Section 2 -->
+        <div class="letter-section" style="margin-top: 2rem; border-top: 1px dashed var(--border-color); padding-top: 2rem;">
+          <h3>직무 관련 경험 및 역량</h3>
+          <p>다양한 도메인(X-ray, Whole Slide Image, 스마트 팜, 스마트 축사 등)의 데이터셋을 다루며 까다로운 기술적 요구사항을 성공적으로 충족시켜 왔습니다.</p>
+          <ul class="panel-list">
+            <li>
+              <strong>의료 시계열 및 복합 데이터 융합:</strong> X-ray 영상에서 OA Progression(관절염 진행 단계)을 예측하기 위해 메타 데이터와 이미지 피처를 결합하는 TabAttention, TabMixer 모듈을 도입하고, Multi-instance Learning 기법을 적용하여 모델이 시간에 따른 이미지 변화 양상을 유기적으로 학습하게 만듦으로써 성능 향상을 달성했습니다.
+            </li>
+            <li>
+              <strong>이미지 생성 및 뼈대 검출:</strong> Keypoint Detection 모델을 통해 하지 전장 정렬(LLA) 각도를 정밀 측정하였고, 국소 무릎 X-ray 영상을 기반으로 Stable Diffusion을 활용하여 전체 하지 영상을 복원 및 생성하는 연구를 성실히 수행했습니다.
+            </li>
+            <li>
+              <strong>불균형 데이터 및 Segmentation 대응:</strong> Whole Slide Image(WSI) 내 뇌종양 세포 검출 Task에서 검출율이 극히 낮았던 분열구(Mitosis) 검출을 위해 Copy & Paste 기법 등의 데이터 보강 방식을 적극적으로 적용하여 감지 정확도를 획기적으로 끌어올렸습니다.
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Section 3 -->
+        <div class="letter-section" style="margin-top: 2rem; border-top: 1px dashed var(--border-color); padding-top: 2rem;">
+          <h3>입사 후 포부</h3>
+          <p>
+            입사 후 가장 먼저 귀사만의 독창적인 개발 프로세스와 파이프라인, 비즈니스 도메인을 빠르게 습득하여 기존 팀원들과 긴밀히 융합되겠습니다. 적응기를 마친 후에는 제가 가진 고도화된 비전 및 영상 처리 지식, LLM 파이프라인 설계 역량을 적극적으로 펼쳐 현재 개발 중인 핵심 프로젝트들이 마일스톤에 맞추어 성공적으로 런칭될 수 있도록 몰입하겠습니다.
+          </p>
+          <p>
+            현재에 만족하지 않고 끊임없이 최신 트렌드의 기술을 학습하고 적용할 것이며, 프로젝트 진행 과정 중 얻은 값진 노하우와 지식들을 팀 내에 활발히 공유하여 함께 성장하는 선순환 구조를 만드는 촉매제가 되겠습니다.
+          </p>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- BOX 7: EXTERNAL ACTIVITIES (Span 12) -->
+    <section class="bento-card activities-card col-12">
+      <h2 class="card-title">외부 활동 및 교육 이수</h2>
+      <div class="activities-grid">
+        
+        <div class="act-card">
+          <span class="act-period">2020.12 (연구소 아르바이트)</span>
+          <h4>논문 데이터 크롤링 및 시각화</h4>
+          <p>MIDLINE 텍스트 데이터를 다운로드하여 필요한 정보를 추출하고 엑셀 데이터로 가공 및 시각화</p>
+        </div>
+        
+        <div class="act-card">
+          <span class="act-period">2020.05 ~ 2020.10 (온라인)</span>
+          <h4>딥러닝 컴퓨터 비전 완벽 가이드</h4>
+          <p>인프런 온라인 플랫폼을 통한 딥러닝 기반 컴퓨터 비전 및 이미지 처리 교육 이수</p>
+        </div>
+        
+        <div class="act-card">
+          <span class="act-period">2020.03 ~ 2020.08 (전문 교육)</span>
+          <h4>파이썬 빅데이터 &amp; 머신러닝 개발자 과정</h4>
+          <p>오라클자바교육학원에서 파이썬 기반 빅데이터 분석 및 AI 머신러닝 과정 수료</p>
+        </div>
+        
+        <div class="act-card">
+          <span class="act-period">2018.09 ~ 2019.02 (정밀의료)</span>
+          <h4>바이오빅데이터 분석 과정 (BDPM)</h4>
+          <p>서울대학교/서울대병원 주관 SQL, R, Python 활용 유전체 및 바이오 데이터 분석 과정 수료</p>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- BOX 8: PORTFOLIO (Span 12) -->
+    <section class="bento-card portfolio-card col-12">
+      <h2 class="card-title">포트폴리오</h2>
+      <div class="portfolio-content">
+        <div class="portfolio-item-box">
+          <div class="portfolio-meta">
+            <span class="portfolio-period">작업 기간: 2022.01.03 ~ 2025.08.19</span>
+            <h3 class="portfolio-name">변강원 딥러닝 엔지니어 포트폴리오 (미리캔버스)</h3>
+            <p class="portfolio-desc">
+              PyTorch 기반의 컴퓨터 비전, 의료 영상 Segmentation/Detection, Stable Diffusion 합성 연구 성과 시각화 자료입니다.
+            </p>
+            <p class="portfolio-link-text" style="margin-top: 1rem; font-size: 0.85rem; color: var(--accent-primary); word-break: break-all;">
+              포트폴리오 주소: <a href="https://www.miricanvas.com/ko/v/1o5mmt" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">https://www.miricanvas.com/ko/v/1o5mmt</a>
+            </p>
+          </div>
+          <a href="https://www.miricanvas.com/ko/v/1o5mmt" target="_blank" rel="noopener noreferrer" class="portfolio-btn">
+            포트폴리오 상세보기
+            <svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2026 Byun Kang-won. Designed with Minimalist Editorial Aesthetics.</p>
+  </footer>
+
+  <!-- Theme Toggle Logic Script -->
+  <script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const moonIcon = document.getElementById('theme-moon');
+    const sunIcon = document.getElementById('theme-sun');
+    const body = document.body;
+
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    if (currentTheme === 'light') {
+      body.classList.remove('dark-theme');
+      body.classList.add('light-theme');
+      moonIcon.classList.add('hidden');
+      sunIcon.classList.remove('hidden');
+      localStorage.setItem('theme', 'light');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      if (body.classList.contains('dark-theme')) {
+        body.classList.remove('dark-theme');
+        body.classList.add('light-theme');
+        moonIcon.classList.add('hidden');
+        sunIcon.classList.remove('hidden');
+        localStorage.setItem('theme', 'light');
+      } else {
+        body.classList.remove('light-theme');
+        body.classList.add('dark-theme');
+        sunIcon.classList.add('hidden');
+        moonIcon.classList.remove('hidden');
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+  </script>
+</body>
+</html>
