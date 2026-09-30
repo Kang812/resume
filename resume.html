@@ -1,0 +1,893 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="변강원 | Medical AI & Computer Vision Engineer 이력서">
+  <title>변강원 | Medical AI · Computer Vision Engineer</title>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-sub: #334155;
+      --text-muted: #64748b;
+      --text-light: #94a3b8;
+      --border: #e2e8f0;
+      --border-light: #edf2f7;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --primary-soft: #eff6ff;
+      --primary-border: #bfdbfe;
+      --badge-bg: #f1f5f9;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.04), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+      --shadow-lg: 0 12px 28px -4px rgba(15, 23, 42, 0.06), 0 4px 10px -2px rgba(15, 23, 42, 0.03);
+    }
+
+    * { box-sizing: border-box; }
+    
+    body {
+      margin: 0;
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+      line-height: 1.68;
+      letter-spacing: -0.015em;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .container {
+      width: min(880px, calc(100% - 36px));
+      margin: 48px auto;
+      padding: 64px 72px;
+      background: var(--card-bg);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-lg);
+    }
+
+    /* Header */
+    header {
+      padding-bottom: 36px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 12px;
+      background: var(--primary-soft);
+      border: 1px solid var(--primary-border);
+      color: var(--primary);
+      font-size: 0.82rem;
+      font-weight: 700;
+      border-radius: 999px;
+      letter-spacing: 0.02em;
+      margin-bottom: 14px;
+    }
+
+    .header-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 32px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--text-main);
+      line-height: 1.15;
+    }
+
+    .intro-text {
+      margin: 0;
+      color: var(--text-sub);
+      font-size: 0.98rem;
+      max-width: 540px;
+      word-break: keep-all;
+      line-height: 1.7;
+    }
+
+    .contact-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      min-width: 170px;
+      text-align: right;
+    }
+
+    .contact-list a:hover {
+      color: var(--primary);
+    }
+
+    .contact-links {
+      display: flex;
+      gap: 8px;
+      justify-content: flex-end;
+      margin-top: 6px;
+    }
+
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border-radius: 6px;
+      background: var(--badge-bg);
+      color: var(--text-sub);
+      border: 1px solid var(--border);
+    }
+
+    .contact-btn:hover {
+      background: #e2e8f0;
+      color: var(--text-main);
+    }
+
+    /* Key Highlights / Summary */
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 28px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .highlight-item {
+      padding: 16px 20px;
+      background: #fafbfc;
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+    }
+
+    .highlight-item strong {
+      display: block;
+      font-size: 1.18rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 2px;
+      letter-spacing: -0.02em;
+    }
+
+    .highlight-item span {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* Section Styles */
+    section {
+      padding-top: 36px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.22rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text-main);
+    }
+
+    .section-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--text-light);
+      text-transform: uppercase;
+    }
+
+    /* Experience */
+    .job-card {
+      display: grid;
+      grid-template-columns: 175px 1fr;
+      gap: 28px;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .job-card:last-child {
+      border-bottom: none;
+    }
+
+    .job-period {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .job-company {
+      margin: 0 0 4px;
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+    }
+
+    .job-role {
+      display: inline-block;
+      margin-left: 8px;
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .job-desc {
+      list-style: none;
+      margin: 12px 0 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      font-size: 0.91rem;
+      color: var(--text-sub);
+    }
+
+    .job-desc li {
+      position: relative;
+      padding-left: 16px;
+      word-break: keep-all;
+    }
+
+    .job-desc li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--primary);
+    }
+
+    .job-desc li b {
+      color: var(--text-main);
+      font-weight: 700;
+    }
+
+    .job-stack {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+    }
+
+    .stack-label {
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-right: 4px;
+    }
+
+    .stack-tag {
+      padding: 2px 8px;
+      background: #f1f5f9;
+      color: var(--text-sub);
+      border-radius: 4px;
+      font-size: 0.77rem;
+      font-weight: 500;
+    }
+
+    /* Selected Projects */
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .project-card {
+      padding: 20px;
+      background: #fafbfc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .project-card:hover {
+      border-color: var(--primary-border);
+      transform: translateY(-1px);
+    }
+
+    .project-title {
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin: 0 0 6px;
+      letter-spacing: -0.02em;
+    }
+
+    .project-desc {
+      margin: 0;
+      font-size: 0.88rem;
+      color: var(--text-sub);
+      word-break: keep-all;
+      line-height: 1.6;
+    }
+
+    /* Two Column Section */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 40px;
+      padding-bottom: 12px;
+    }
+
+    /* Skills */
+    .skill-category + .skill-category {
+      margin-top: 16px;
+    }
+
+    .skill-cat-title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .chip {
+      padding: 4px 10px;
+      background: #f1f5f9;
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+
+    .chip.highlight {
+      background: var(--primary-soft);
+      border-color: var(--primary-border);
+      color: var(--primary-dark);
+    }
+
+    /* Education */
+    .edu-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .edu-item b {
+      display: block;
+      font-size: 0.94rem;
+      color: var(--text-main);
+      margin-bottom: 2px;
+    }
+
+    .edu-item span {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      display: block;
+    }
+
+    /* Statement */
+    .statement-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .statement-block {
+      padding: 22px 24px;
+      background: #fafbfc;
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+    }
+
+    .statement-block h3 {
+      margin: 0 0 10px;
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+
+    .statement-block p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--text-sub);
+      word-break: keep-all;
+      line-height: 1.72;
+    }
+
+    .statement-block p + p {
+      margin-top: 10px;
+    }
+
+    /* Additional */
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .etc-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .info-card {
+      padding: 16px 18px;
+      background: #fafbfc;
+      border: 1px solid var(--border-light);
+      border-radius: 10px;
+    }
+
+    .info-card strong {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .info-card p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--text-sub);
+    }
+
+    .info-card small {
+      display: block;
+      margin-top: 3px;
+      font-size: 0.78rem;
+      color: var(--text-light);
+    }
+
+    /* Footer Links */
+    .link-section {
+      margin-top: 40px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .link-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .action-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      font-size: 0.86rem;
+      font-weight: 600;
+      border-radius: 8px;
+      background: #ffffff;
+      color: var(--text-main);
+      border: 1px solid var(--border);
+      transition: all 0.15s ease;
+    }
+
+    .action-btn:hover {
+      background: #f8fafc;
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .action-btn.primary {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    .action-btn.primary:hover {
+      background: var(--primary-dark);
+      border-color: var(--primary-dark);
+    }
+
+    .footer-note {
+      font-size: 0.78rem;
+      color: var(--text-light);
+      margin: 0;
+    }
+
+    /* Print Optimization */
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+      }
+      .job-card, .project-card, .statement-block, .info-card {
+        page-break-inside: avoid;
+      }
+      .link-section {
+        display: none;
+      }
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      .container {
+        padding: 32px 20px;
+        margin: 0;
+        border-radius: 0;
+        border: none;
+      }
+      .header-main {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .contact-list {
+        text-align: left;
+      }
+      .contact-links {
+        justify-content: flex-start;
+      }
+      .highlight-grid, .project-grid, .two-col, .info-grid, .etc-grid {
+        grid-template-columns: 1fr;
+      }
+      .job-card {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <!-- Header -->
+    <header>
+      <div class="header-badge">Medical AI &amp; Computer Vision Engineer</div>
+      <div class="header-main">
+        <div>
+          <h1>변강원</h1>
+          <p class="intro-text">
+            X-ray 및 Whole Slide Image(WSI) 기반 컴퓨터 비전 모델을 연구·개발하고, 최근에는 건강검진 데이터 기반 OCR·LLM 서비스 파이프라인 설계까지 확장해 온 AI 엔지니어입니다. 데이터 전처리부터 모델 아키텍처 설계, 백엔드 서비스 연동까지 전 과정을 주도적으로 구현해 왔습니다.
+          </p>
+        </div>
+        <div>
+          <ul class="contact-list">
+            <li>경기 광주시</li>
+            <li><a href="mailto:bgw2001@gmail.com">bgw2001@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Highlights -->
+      <div class="highlight-grid">
+        <div class="highlight-item">
+          <strong>4년 8개월</strong>
+          <span>AI / Computer Vision 실무 경력</span>
+        </div>
+        <div class="highlight-item">
+          <strong>Medical Imaging AI</strong>
+          <span>X-ray · WSI · 관절경 · 병리 조직</span>
+        </div>
+        <div class="highlight-item">
+          <strong>End-to-End Pipeline</strong>
+          <span>데이터 증강 · 모델링 · 서비스 서빙</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Experience -->
+    <section>
+      <div class="section-header">
+        <h2>경력 사항</h2>
+        <span class="section-tag">Experience</span>
+      </div>
+
+      <article class="job-card">
+        <div class="job-period">2025.10 – 현재</div>
+        <div>
+          <h3 class="job-company">로킷헬스케어 <span class="job-role">AI Engineer / R&amp;D</span></h3>
+          <ul class="job-desc">
+            <li><b>AI-KidneyGen 서비스 기획 및 연동</b>: 제품 요구사항 정의, 개발 로드맵 관리 및 외부 개발사와의 백엔드 API 연동 규격 조율 주도</li>
+            <li><b>Neo4j 지식 그래프 및 LLM 기반 맞춤형 식단 추천</b>: FastAPI 백엔드를 구축하고, 사용자 검진 데이터와 영양 성분을 연계한 Neo4j 지식 그래프(Knowledge Graph) 및 LLM 기반 개인화 식단 추천 엔진 구현</li>
+            <li><b>LLM 기반 비정형 건강검진 OCR 자동화</b>: 사진 및 PDF 형태의 비정형 검진 결과지에서 포맷 제약 없이 의료 수치를 추출하여 유저 프로필에 자동 반영하는 LLM 기반 OCR 파이프라인 구축</li>
+            <li><b>음식 객체 탐지 및 Qdrant Vector DB 시맨틱 검색</b>: 사진 속 음식 Object Detection으로 영양성분을 자동 매핑하고, Qdrant Vector DB를 활용한 임베딩 벡터 유사도 기반 의미론적(Semantic) 음식 검색 기능 개발</li>
+            <li><b>건강 데이터 분석 및 Rule-based Action Plan</b>: 대규모 건강검진 데이터의 연령·성별 연관성을 분석하여 신부전 예방을 위한 맞춤형 건강 가이드라인 알고리즘 설계</li>
+            <li><b>바이오마커 분석 및 예측 모델링</b>: CA 19-9 등 10종 이상의 단백 바이오마커 상관관계 분석, 핵심 피처 추출 및 분류·예측 모델 검증</li>
+            <li><b>관절경 굴절 보정 알고리즘 개발</b>: 관절경 수술 환경에서 매질(식염수·공기)에 따라 왜곡되는 광학 이미지의 굴절 현상을 정밀 보정하는 컴퓨터 비전 알고리즘 연구·구현</li>
+          </ul>
+          <div class="job-stack">
+            <span class="stack-label">Tech Stack:</span>
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">FastAPI</span>
+            <span class="stack-tag">LLM</span>
+            <span class="stack-tag">LLM OCR</span>
+            <span class="stack-tag">Qdrant (Vector DB)</span>
+            <span class="stack-tag">Neo4j</span>
+            <span class="stack-tag">Knowledge Graph</span>
+            <span class="stack-tag">Object Detection</span>
+            <span class="stack-tag">scikit-learn</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="job-card">
+        <div class="job-period">2024.06 – 2025.09</div>
+        <div>
+          <h3 class="job-company">크레스콤 <span class="job-role">연구개발 / R&amp;D</span></h3>
+          <ul class="job-desc">
+            <li><b>Stable Diffusion 기반 의료영상 합성 (Generative AI)</b>: 무릎(Knee) X-ray의 해부학적 기준점을 바탕으로 하지 전장(Full Lower Limb) 영상을 생성하는 파이프라인 연구 및 데이터 증강 검증</li>
+            <li><b>하지 정렬(LLA) 자동 계측 모델 개발</b>: 하지 전장 및 무릎 X-ray에서 해부학적 Keypoint를 탐지하고 정렬 각도를 자동 산출하는 딥러닝 모델 개발 및 파이프라인 최적화</li>
+            <li><b>의료 AI 불확실성(Uncertainty) 정량화</b>: 무릎 관절염 변형 등급(KL Grade) 예측 결과의 임상적 신뢰도 확보를 위한 Confidence Level 산출 알고리즘 연구</li>
+            <li><b>Knee Joint Segmentation 모델 개발</b>: 정밀한 관절 간격 분석 및 진단 보조를 위한 무릎 관절 영역 자동 분할 딥러닝 모델 개발</li>
+          </ul>
+          <div class="job-stack">
+            <span class="stack-label">Tech Stack:</span>
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">PyTorch</span>
+            <span class="stack-tag">Stable Diffusion</span>
+            <span class="stack-tag">Keypoint Detection</span>
+            <span class="stack-tag">Segmentation</span>
+            <span class="stack-tag">X-ray Imaging</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="job-card">
+        <div class="job-period">2022.01 – 2024.05</div>
+        <div>
+          <h3 class="job-company">에이비스 <span class="job-role">연구개발 / R&amp;D</span></h3>
+          <ul class="job-desc">
+            <li><b>Brain Tumor Segmentation 및 No-code 파이프라인</b>: 병리 이미지에서 4개 핵심 영역(Tumor, Necrosis, Mitosis, MVP)을 분할하는 Instance Segmentation 모델 개발 및 비개발자 연구원용 엔드투엔드 학습·추론 자동화 시스템 구축</li>
+            <li><b>의료 Grand Challenge (TIGER) 참여 및 Nature 자매지 논문 공저</b>: 고해상도 Whole Slide Image(WSI)의 예측 성능 향상을 위한 도메인 특화 데이터 증강 프로세스 개발 참여 (<a href="https://www.nature.com/articles/s41467-026-72956-x#Sec37" target="_blank" rel="noreferrer" style="color:var(--primary);text-decoration:underline;">Nature Communications 논문 ↗</a>)</li>
+            <li><b>스마트팜 딸기 숙도 진단 알고리즘 개발</b>: 모바일 서비스용 Instance Segmentation 기반 실시간 딸기 객체 검출 및 색상 데이터 기반 숙도 정량화 알고리즘 구현</li>
+            <li><b>바이오칩 세포 분석 ATG Cell Detection</b>: 바이오칩 내 미세 세포 검출 및 Multi-class Classification 모델 연구·개발</li>
+            <li><b>이종 도메인 데이터 구축 AI 모델 개발</b>: 말 신체 부위(마사회), 자율주행 객체, 스마트 축산, 가구 인식 등 다양한 산업군 도메인의 Object Detection 모델 개발 및 라벨링 가이드라인 정립</li>
+          </ul>
+          <div class="job-stack">
+            <span class="stack-label">Tech Stack:</span>
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">PyTorch</span>
+            <span class="stack-tag">TensorFlow</span>
+            <span class="stack-tag">OpenCV</span>
+            <span class="stack-tag">Instance Segmentation</span>
+            <span class="stack-tag">WSI</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Selected Projects -->
+    <section>
+      <div class="section-header">
+        <h2>대표 프로젝트</h2>
+        <span class="section-tag">Key Projects</span>
+      </div>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3 class="project-title">AI-KidneyGen 헬스케어 서비스</h3>
+          <p class="project-desc">LLM 기반 서식 무관 검진 결과지 OCR, 음식 Detection 및 Qdrant Vector DB 검색, Neo4j 지식 그래프와 LLM 기반 맞춤형 식단 가이드라인까지 엔드투엔드 AI 아키텍처를 총괄 구현했습니다.</p>
+        </div>
+        <div class="project-card">
+          <h3 class="project-title">Knee to Full Lower Limb</h3>
+          <p class="project-desc">무릎 단일 X-ray 영상에서 기준점 정보를 추출하고, Stable Diffusion 기반으로 하지 전장(Full Lower Limb) 정렬 영상을 합성하는 생성형 의료 AI 파이프라인을 설계했습니다.</p>
+        </div>
+        <div class="project-card">
+          <h3 class="project-title">하지 전장 이미지 정렬(LLA) 자동 계측</h3>
+          <p class="project-desc">하지 전장 X-ray에서 해부학적 기준점(Femur head, Knee, Ankle)을 Object Detection으로 탐지하고 정렬 각도를 정밀 측정하여 진단 및 수술 계획을 보조했습니다.</p>
+        </div>
+        <div class="project-card">
+          <h3 class="project-title">WSI Brain Tumor Segmentation</h3>
+          <p class="project-desc">초고해상도 병리 이미지에서 4개 클래스 종양 조직을 분할하고, 희귀 클래스(Mitosis) 검출을 위한 Copy &amp; Paste 증강 및 비개발 연구원용 No-code 학습 파이프라인을 구축했습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Education -->
+    <section class="two-col">
+      <div>
+        <div class="section-header">
+          <h2>기술 스택</h2>
+          <span class="section-tag">Skills</span>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-title">Computer Vision &amp; Deep Learning</div>
+          <div class="chips">
+            <span class="chip highlight">PyTorch</span>
+            <span class="chip highlight">OpenCV</span>
+            <span class="chip">Object Detection</span>
+            <span class="chip">Segmentation</span>
+            <span class="chip">Keypoint Detection</span>
+            <span class="chip">Stable Diffusion</span>
+            <span class="chip">OCR</span>
+            <span class="chip">TensorFlow</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-title">Backend &amp; Data Engineering</div>
+          <div class="chips">
+            <span class="chip highlight">Python</span>
+            <span class="chip highlight">FastAPI</span>
+            <span class="chip highlight">LLM</span>
+            <span class="chip">Qdrant (Vector DB)</span>
+            <span class="chip">Neo4j</span>
+            <span class="chip">Knowledge Graph</span>
+            <span class="chip">scikit-learn</span>
+            <span class="chip">Pandas</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Linux</span>
+            <span class="chip">GitHub</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-header">
+          <h2>학력 및 자격</h2>
+          <span class="section-tag">Education</span>
+        </div>
+        <ul class="edu-list">
+          <li class="edu-item">
+            <b>연세대학교 원주캠퍼스 · 정보통계학과</b>
+            <span>2016.03 – 2018.08 · 편입 / 졸업 (학점: 3.82 / 4.3)</span>
+          </li>
+          <li class="edu-item">
+            <b>우석대학교 · 실버복지학과 (복수전공: 대체의학과)</b>
+            <span>2012.03 – 2015.12 · 자퇴 (편입) (학점: 4.19 / 4.5)</span>
+          </li>
+          <li class="edu-item">
+            <b>데이터분석준전문가 (ADsP)</b>
+            <span>2020.12 · 한국데이터산업진흥원</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Statement -->
+    <section>
+      <div class="section-header">
+        <h2>자기소개서</h2>
+        <span class="section-tag">Statement</span>
+      </div>
+      <div class="statement-container">
+        <div class="statement-block">
+          <h3>1. 지원 동기</h3>
+          <p>
+            지난 4년 8개월간 Computer Vision 및 딥러닝 엔지니어로서 의료영상 분석부터 첨단 산업 영상 인식까지 현장의 문제를 AI 기술로 해결해 왔습니다. X-ray, MRI, Whole Slide Image(WSI) 등 다양한 모달리티의 의료 데이터를 다루며, 모델의 정량적 정확도뿐만 아니라 그 결과가 의료진의 진단 보조와 환자 치료 계획에 어떻게 실질적으로 기여할 수 있는지를 깊이 고민해 왔습니다.
+          </p>
+          <p>
+            최근에는 모델 연구에 머무르지 않고 건강검진 결과지 OCR, LLM, Knowledge Graph 기반 추천 엔진을 서비스 백엔드와 유기적으로 연결하며 종합적인 AI 설루션 엔지니어로서 역량을 확장했습니다. 비즈니스 요구사항을 기술적 아키텍처로 해석하고, 모델·API·사용자 경험의 전 과정을 함께 설계하는 일에서 큰 성취를 느낍니다.
+          </p>
+        </div>
+
+        <div class="statement-block">
+          <h3>2. 직무 관련 경험 및 문제 해결 역량</h3>
+          <p>
+            의료 영상의 만성적인 데이터 부족 문제를 극복하기 위해 무릎 X-ray 기준점을 활용한 Stable Diffusion 기반 하지 전장 영상 합성 파이프라인을 연구하고 데이터 증강을 검증했습니다. WSI Brain Tumor Segmentation 과제에서는 극심한 클래스 불균형을 해소하고자 희귀 영역(Mitosis)에 대한 Copy &amp; Paste 증강 기법을 도입하여 탐지 정확도를 안정적으로 끌어올렸으며, 비개발 연구원도 손쉽게 파이프라인을 활용할 수 있도록 엔드투엔드 자동화 흐름을 구축했습니다.
+          </p>
+          <p>
+            관절염(OA) 예후 예측 과제에서는 시간에 따른 X-ray 영상 변화와 환자의 임상 메타데이터를 결합하는 멀티모달 접근을 시도했으며, TabAttention, TabMixer, Multi-Instance Learning(MIL) 개념을 적용하여 시계열적 구조에 최적화된 아키텍처를 설계했습니다.
+          </p>
+        </div>
+
+        <div class="statement-block">
+          <h3>3. 협업 및 소통 방식</h3>
+          <p>
+            로킷헬스케어에서는 AI-KidneyGen 서비스를 구축하며 외주 개발사(SI)와 내부 개발팀 간의 기술적 가교 역할을 수행했습니다. LLM 및 지식 그래프 기반 추천 엔진과 OCR 자동 파이프라인이 외부 플랫폼에 결함 없이 연동될 수 있도록 API 규격을 정밀하게 정의하고 아키텍처 가이드를 제공하여 정해진 납기 내 서비스를 성공적으로 론칭했습니다.
+          </p>
+          <p>
+            이전 대규모 데이터 구축 과제에서도 마사회, 축산 전문가 등 도메인 전문가와 개발팀 간의 용어 격차를 좁히기 위해 도메인 지식을 선제적으로 학습하고 명확한 라벨링 가이드라인을 수립했습니다. 저는 견고한 데이터와 명확한 협업 기준이 뒷받침될 때 비로소 신뢰할 수 있는 AI 프로덕트가 완성된다고 믿습니다.
+          </p>
+        </div>
+
+        <div class="statement-block">
+          <h3>4. 입사 후 포부</h3>
+          <p>
+            입사 초기에는 귀사의 개발 파이프라인과 도메인 지식을 신속히 습득하여, 현재 진행 중인 Computer Vision 및 생성형 AI 프로젝트에 즉각적인 기여를 해내겠습니다. 중장기적으로는 영상, 텍스트, 정형 데이터를 자유롭게 결합하는 멀티모달 AI 전문가로 도약하여, 최신 AI 연구 트렌드를 실제 상용 프로덕트에 빠르고 안정적으로 이식하는 핵심 엔지니어로 활약하겠습니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Info -->
+    <section>
+      <div class="section-header">
+        <h2>병역 · 자격 · 교육 및 활동</h2>
+        <span class="section-tag">Additional Info</span>
+      </div>
+      <div class="info-grid">
+        <div class="info-card">
+          <strong>병역</strong>
+          <p>육군 · 병장 · 만기 전역</p>
+          <small>2013.10 – 2015.07</small>
+        </div>
+        <div class="info-card">
+          <strong>자격증</strong>
+          <p>데이터분석준전문가 (ADsP)</p>
+          <small>2020.12 · 한국데이터산업진흥원</small>
+          <p style="margin-top: 6px;">MOS Excel 2007 Expert · MOS PowerPoint 2007</p>
+          <small>2013 · Microsoft</small>
+        </div>
+        <div class="info-card">
+          <strong>직무 전문 교육</strong>
+          <p>바이오빅데이터 분석 및 정밀의료 양성과정(BDPM)</p>
+          <small>서울대학교 / 서울대학교병원 · 2018.09 – 2019.02 (SQL, R, Python)</small>
+          <p style="margin-top: 6px;">파이썬을 활용한 빅데이터 분석 AI·머신러닝 개발자 과정</p>
+          <small>오라클자바교육학원 · 2020.03 – 2020.08</small>
+        </div>
+        <div class="info-card">
+          <strong>대외 활동 및 경험</strong>
+          <p>네팔 문화선교 활동</p>
+          <small>한신교회 자원봉사 · 2012.04 – 2012.06</small>
+          <p style="margin-top: 6px;">의학 논문 데이터 크롤링 및 MIDLINE 텍스트 가공</p>
+          <small>연구소 프로젝트 · 2020.12</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- ETC -->
+    <section>
+      <div class="section-header">
+        <h2>기타</h2>
+        <span class="section-tag">ETC</span>
+      </div>
+      <div class="etc-grid">
+        <div class="info-card">
+          <strong>포트폴리오</strong>
+          <p>주요 의료 AI 및 컴퓨터 비전 프로젝트 상세 웹 포트폴리오</p>
+          <a href="portfolio.html" style="display: inline-block; margin-top: 6px; color: var(--primary); font-weight: 600; font-size: 0.85rem;">포트폴리오 보기 →</a>
+        </div>
+        <div class="info-card">
+          <strong>GitHub</strong>
+          <p>개인 프로젝트, 알고리즘 및 AI 연구 코드 저장소</p>
+          <a href="https://github.com/Kang812" target="_blank" rel="noreferrer" style="display: inline-block; margin-top: 6px; color: var(--primary); font-weight: 600; font-size: 0.85rem;">github.com/Kang812 ↗</a>
+        </div>
+        <div class="info-card">
+          <strong>논문 (Nature Communications)</strong>
+          <p>의료 Grand Challenge (TIGER) WSI 성능 개선 연구 참여 및 논문 공저</p>
+          <a href="https://www.nature.com/articles/s41467-026-72956-x#Sec37" target="_blank" rel="noreferrer" style="display: inline-block; margin-top: 6px; color: var(--primary); font-weight: 600; font-size: 0.85rem;">논문 상세 확인하기 ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Links -->
+    <div class="link-section">
+      <p class="footer-note">© 변강원. 본 이력서의 프로젝트 내용은 공개 가능한 범위 내에서 작성되었습니다.</p>
+    </div>
+  </main>
+</body>
+</html>

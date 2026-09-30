@@ -1,0 +1,1390 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="변강원 | Medical AI & Computer Vision Engineer 포트폴리오">
+  <title>변강원 | Medical AI & Computer Vision Portfolio</title>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-sub: #334155;
+      --text-muted: #64748b;
+      --text-light: #94a3b8;
+      --border: #e2e8f0;
+      --border-light: #edf2f7;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --primary-soft: #eff6ff;
+      --primary-border: #bfdbfe;
+      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.05);
+      --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06);
+      --shadow-lg: 0 12px 28px rgba(15, 23, 42, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text-main);
+      background: var(--bg);
+      font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+      line-height: 1.68;
+      letter-spacing: -0.015em;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1090px, calc(100% - 40px)); margin: 0 auto; }
+
+    /* Navigation */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav .wrap {
+      min-height: 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .brand {
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text-main);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+    .nav-links a:hover { color: var(--primary); }
+    .nav-resume-btn {
+      padding: 6px 14px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      border: 1px solid var(--primary-border);
+      border-radius: 8px;
+      font-weight: 700;
+      transition: all 0.15s ease;
+    }
+    .nav-resume-btn:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 96px 0 80px;
+      background: linear-gradient(180deg, #f0f6ff 0%, #f8fafc 100%);
+      border-bottom: 1px solid var(--border-light);
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 12px;
+      background: #ffffff;
+      border: 1px solid var(--primary-border);
+      color: var(--primary);
+      font-size: 0.82rem;
+      font-weight: 700;
+      border-radius: 999px;
+      margin-bottom: 18px;
+      box-shadow: var(--shadow-sm);
+    }
+    h1 {
+      max-width: 860px;
+      margin: 0 0 20px;
+      font-size: clamp(2.3rem, 5vw, 3.8rem);
+      line-height: 1.15;
+      letter-spacing: -0.05em;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+    .lead {
+      max-width: 720px;
+      margin: 0;
+      font-size: clamp(1.02rem, 1.8vw, 1.18rem);
+      color: var(--text-sub);
+      word-break: keep-all;
+      line-height: 1.75;
+    }
+    .hero-bottom {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 36px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 22px;
+      border-radius: 10px;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.94rem;
+      font-weight: 700;
+      box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
+      transition: all 0.15s ease;
+    }
+    .button:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+    .button.secondary {
+      background: #fff;
+      color: var(--text-main);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+    .button.secondary:hover {
+      background: #f8fafc;
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    /* Section Global */
+    section { padding: 84px 0; }
+    section.white { background: var(--card-bg); }
+    .section-header-block {
+      margin-bottom: 40px;
+    }
+    .section-label {
+      margin: 0 0 6px;
+      color: var(--primary);
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    h2 {
+      margin: 0;
+      font-size: clamp(1.7rem, 3vw, 2.3rem);
+      letter-spacing: -0.04em;
+      line-height: 1.25;
+      font-weight: 800;
+    }
+    .section-intro {
+      margin: 10px 0 0;
+      color: var(--text-muted);
+      font-size: 1rem;
+      max-width: 680px;
+      word-break: keep-all;
+    }
+
+    /* Stats Grid */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .stat {
+      padding: 24px 28px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #fff;
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong {
+      display: block;
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: -0.03em;
+      margin-bottom: 4px;
+    }
+    .stat span {
+      color: var(--text-sub);
+      font-size: 0.92rem;
+      font-weight: 500;
+    }
+
+    /* Project Cards */
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+    .project-card-full {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .project-card-full:hover {
+      border-color: var(--primary-border);
+      box-shadow: var(--shadow-lg);
+    }
+    .project-card-full:nth-child(even) .project-media-box {
+      order: -1;
+    }
+    .project-info {
+      padding: 38px 40px;
+      display: flex;
+      flex-direction: column;
+    }
+    .project-badge-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .project-company-badge {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--primary);
+      background: var(--primary-soft);
+      padding: 3px 10px;
+      border-radius: 6px;
+      border: 1px solid var(--primary-border);
+    }
+    .project-year {
+      font-size: 0.82rem;
+      color: var(--text-light);
+      font-weight: 600;
+    }
+    h3.project-title {
+      margin: 0 0 12px;
+      font-size: 1.55rem;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      line-height: 1.3;
+      color: var(--text-main);
+    }
+    .project-summary-text {
+      color: var(--text-sub);
+      font-size: 0.95rem;
+      margin: 0 0 20px;
+      word-break: keep-all;
+      line-height: 1.65;
+    }
+
+    /* 4-Step Engineering Details */
+    .eng-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+      background: #fafbfc;
+      padding: 18px 20px;
+      border-radius: 12px;
+      border: 1px solid var(--border-light);
+    }
+    .eng-step {
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: var(--text-sub);
+      word-break: keep-all;
+    }
+    .eng-step-label {
+      font-weight: 700;
+      color: var(--primary-dark);
+      display: inline-block;
+      margin-right: 6px;
+      font-size: 0.85rem;
+    }
+    .eng-step-label.danger {
+      color: #d97706; /* Warning amber for challenge */
+    }
+    .eng-step-label.success {
+      color: #059669; /* Success green for result */
+    }
+    .eng-tech-sublist {
+      margin: 6px 0 2px;
+      padding-left: 18px;
+      list-style-type: disc;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .eng-tech-sublist li {
+      font-size: 0.86rem;
+      line-height: 1.5;
+      color: var(--text-sub);
+    }
+    .eng-tech-sublist li b {
+      color: var(--primary-dark);
+      font-weight: 700;
+      margin-right: 3px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: auto;
+    }
+    .chip {
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: #f1f5f9;
+      color: var(--text-sub);
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    /* Media Box */
+    .project-media-box {
+      background: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-left: 1px solid var(--border-light);
+      min-height: 380px;
+      padding: 20px;
+    }
+    .project-card-full:nth-child(even) .project-media-box {
+      border-left: none;
+      border-right: 1px solid var(--border-light);
+    }
+    .project-media-box img {
+      width: 100%;
+      height: 100%;
+      max-height: 480px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    /* Architecture Modules (AI-KidneyGen) */
+    .arch-diagram {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background: #ffffff;
+      padding: 20px 22px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+    .arch-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-light);
+      margin-bottom: 2px;
+    }
+    .arch-header-title {
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.01em;
+    }
+    .arch-header-sub {
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: var(--primary);
+      background: var(--primary-soft);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .arch-part {
+      padding: 11px 14px;
+      border-radius: 10px;
+      background: #fafbfc;
+      border: 1px solid var(--border-light);
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      transition: all 0.15s ease;
+    }
+    .arch-part:hover {
+      border-color: var(--primary-border);
+      background: #f8fafc;
+    }
+    .arch-part-badge {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
+    .arch-part-badge.blue {
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+    }
+    .arch-part-badge.emerald {
+      background: #ecfdf5;
+      color: #047857;
+      border: 1px solid #a7f3d0;
+    }
+    .arch-part-badge.purple {
+      background: #faf5ff;
+      color: #7e22ce;
+      border: 1px solid #e9d5ff;
+    }
+    .arch-part-badge.amber {
+      background: #fffbeb;
+      color: #b45309;
+      border: 1px solid #fde68a;
+    }
+    .arch-part-body strong {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 2px;
+    }
+    .arch-part-body p {
+      margin: 0;
+      font-size: 0.79rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+      word-break: keep-all;
+    }
+
+    /* PCC Visual Component */
+    .pcc-visual {
+      width: 100%;
+      background: #ffffff;
+      padding: 20px 22px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .pcc-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .pcc-header-title {
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+    .pcc-header-tag {
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: #0f6b5c;
+      background: #e3f1ed;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .pcc-kpis {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+    .pcc-kpi {
+      background: #fafbfc;
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      padding: 9px 8px;
+      text-align: center;
+    }
+    .pcc-kpi.highlight {
+      background: #eff6ff;
+      border-color: #bfdbfe;
+    }
+    .pcc-kpi strong {
+      display: block;
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.2;
+    }
+    .pcc-kpi span {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+    .pcc-bars {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      background: #fafbfc;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--border-light);
+    }
+    .pcc-bar-title {
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--text-sub);
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2px;
+    }
+    .pcc-bar-row {
+      display: grid;
+      grid-template-columns: 105px 1fr 45px;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.74rem;
+      font-weight: 600;
+      color: var(--text-sub);
+    }
+    .pcc-bar-track {
+      height: 11px;
+      background: #e2e8f0;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .pcc-bar-fill {
+      height: 100%;
+      background: #94a3b8;
+      border-radius: 4px;
+    }
+    .pcc-bar-fill.active {
+      background: #0f6b5c;
+    }
+    .pcc-bar-val {
+      text-align: right;
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .pcc-detail-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 16px;
+      background: #f0fdfa;
+      color: #0f6b5c;
+      border: 1px solid #99f6e4;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-align: center;
+      transition: all 0.15s ease;
+      text-decoration: none;
+    }
+    .pcc-detail-link:hover {
+      background: #0f6b5c;
+      color: #ffffff;
+      border-color: #0f6b5c;
+    }
+
+    /* More Projects Grid */
+    .more-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .more-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .more-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--primary-border);
+    }
+    .more-card-img {
+      width: 100%;
+      height: 180px;
+      background: #f1f5f9;
+      overflow: hidden;
+    }
+    .more-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .more-card-body {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .more-card-kicker {
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+    .more-card h4 {
+      margin: 0 0 8px;
+      font-size: 1.12rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .more-card p {
+      margin: 0 0 16px;
+      font-size: 0.87rem;
+      color: var(--text-muted);
+      word-break: keep-all;
+      line-height: 1.6;
+    }
+
+    /* Resume CTA Banner */
+    .resume-cta-section {
+      background: #ffffff;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+      padding: 72px 0;
+    }
+    .cta-box {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    /* Footer */
+    footer {
+      padding: 64px 0 54px;
+      background: #0f172a;
+      color: #94a3b8;
+    }
+    footer h2 {
+      margin: 8px 0 20px;
+      color: #ffffff;
+      font-size: 1.8rem;
+      letter-spacing: -0.04em;
+    }
+    .contact-links-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: #cbd5e1;
+    }
+    .contact-links-row a {
+      color: #e2e8f0;
+      border-bottom: 1px solid #475569;
+      padding-bottom: 2px;
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+    .contact-links-row a:hover {
+      color: #60a5fa;
+      border-color: #60a5fa;
+    }
+    .footer-note {
+      margin-top: 36px;
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 900px) {
+      .project-card-full {
+        grid-template-columns: 1fr;
+      }
+      .project-card-full:nth-child(even) .project-media-box {
+        order: 0;
+      }
+      .project-media-box {
+        border-left: none;
+        border-bottom: 1px solid var(--border-light);
+        min-height: 260px;
+      }
+      .stat-grid, .more-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="#top">변강원</a>
+      <div class="nav-links">
+        <a href="#about">소개</a>
+        <a href="#projects">대표 프로젝트</a>
+        <a href="#more">추가 연구</a>
+        <a href="#contact">연락처</a>
+        <a class="nav-resume-btn" href="resume.html">이력서(Resume) 보기 ↗</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <!-- Hero -->
+    <header class="hero">
+      <div class="wrap">
+        <div class="eyebrow">Medical AI &amp; Computer Vision Engineer</div>
+        <h1>의료영상의 한계를 넘어,<br>실제 작동하는 AI를 구현합니다.</h1>
+        <p class="lead">
+          X-ray·Whole Slide Image(WSI) 기반 컴퓨터 비전 모델 개발부터 생성형 AI(Stable Diffusion) 의료 파이프라인, OCR·LLM 기반 헬스케어 서비스 서빙까지 전 주기를 책임져 온 4년 8개월 차 AI 엔지니어 변강원입니다.
+        </p>
+        <div class="hero-bottom">
+          <a class="button" href="#projects">대표 프로젝트 살펴보기 ↓</a>
+          <a class="button secondary" href="resume.html">이력서 보기 →</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Stats -->
+    <section id="about" class="white">
+      <div class="wrap">
+        <div class="section-header-block">
+          <p class="section-label">Engineering Overview</p>
+          <h2>핵심 실무 역량</h2>
+          <p class="section-intro">
+            모델의 단순 정확도를 넘어 실제 의료진의 임상 보조와 환자 서비스에 기여할 수 있는 안정적인 AI 파이프라인을 구축해 왔습니다.
+          </p>
+        </div>
+        <div class="stat-grid">
+          <div class="stat">
+            <strong>4년 8개월</strong>
+            <span>AI / Computer Vision 실무 연구·개발</span>
+          </div>
+          <div class="stat">
+            <strong>Multi-Modality</strong>
+            <span>X-ray · WSI · 관절경 · 비정형 텍스트 융합</span>
+          </div>
+          <div class="stat">
+            <strong>End-to-End</strong>
+            <span>데이터 전처리 ➔ 아키텍처 설계 ➔ 상용 API 연동</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work -->
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-header-block">
+          <p class="section-label">Selected Work</p>
+          <h2>대표 엔지니어링 프로젝트</h2>
+          <p class="section-intro">
+            실제 현업에서 직면한 문제 정의부터 기술적 해결 과정(Troubleshooting)과 결과를 상세히 정리했습니다.
+          </p>
+        </div>
+
+        <div class="project-list">
+          <!-- Project 1: AI-KidneyGen -->
+          <article class="project-card-full">
+            <div class="project-info">
+              <div class="project-badge-row">
+                <span class="project-company-badge">로킷헬스케어</span>
+                <span class="project-year">2025.10 – 현재</span>
+              </div>
+              <h3 class="project-title">AI-KidneyGen 건강검진 OCR &amp; LLM 서비스</h3>
+              <p class="project-summary-text">
+                종이/PDF 형태의 건강검진 결과지를 LLM 기반 OCR로 서식 제약 없이 자동 추출하고, 음식 사진 객체 탐지(Detection) 및 Qdrant Vector DB 검색, Neo4j 지식 그래프와 LLM을 결합하여 개인 맞춤형 신부전 식단 가이드라인을 제공하는 상용 AI 서비스를 아키텍처부터 API 연동까지 총괄 구현했습니다.
+              </p>
+              <div class="eng-steps">
+                <div class="eng-step">
+                  <span class="eng-step-label">🎯 Goal:</span>
+                  병원마다 상이한 비정형 결과지 입력 자동화 및 일상 식단 사진 분석·Qdrant 기반 영양 검색을 통한 개인화 신부전 예방 식단 추천
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label">🛠️ Tech:</span>
+                  <ul class="eng-tech-sublist">
+                    <li><b>[검진 분석]</b> 건강검진 사진 ➔ LLM OCR</li>
+                    <li><b>[식단 검색]</b> Food Detection + Qdrant Vector DB</li>
+                    <li><b>[개인화 추천]</b> Neo4j + LLM</li>
+                    <li><b>[서빙]</b> FastAPI</li>
+                  </ul>
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label danger">⚠️ Challenge:</span>
+                  비정형 서식 및 사진 왜곡에 강인한 LLM OCR 파이프라인 설계, 음식 객체 탐지 후 영양성분 매핑을 위한 고차원 벡터 임베딩 유사도 검색 최적화, 외부 연동(SI)용 무결점 API 규격 설계
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label success">📈 Impact:</span>
+                  포맷 제약 없는 검진 데이터 자동 파싱, 사진 한 장으로 섭취 음식의 영양성분을 즉시 확인하는 멀티모달 인터페이스 구축 및 지식 그래프 기반 정밀 영양 가이드라인 서빙 안정화
+                </div>
+              </div>
+              <div class="chips">
+                <span class="chip">FastAPI</span>
+                <span class="chip">LLM</span>
+                <span class="chip">LLM OCR</span>
+                <span class="chip">Qdrant (Vector DB)</span>
+                <span class="chip">Neo4j</span>
+                <span class="chip">Knowledge Graph</span>
+                <span class="chip">Food Detection</span>
+                <span class="chip">Python</span>
+              </div>
+            </div>
+            <div class="project-media-box">
+              <div class="arch-diagram" aria-label="AI-KidneyGen 시스템 역할별 아키텍처">
+                <div class="arch-header">
+                  <span class="arch-header-title">System Architecture</span>
+                  <span class="arch-header-sub">역할별 파트 분리</span>
+                </div>
+                
+                <div class="arch-part">
+                  <div class="arch-part-badge blue">PART 1 · 검진 분석</div>
+                  <div class="arch-part-body">
+                    <strong>LLM 기반 비정형 OCR</strong>
+                    <p>서식 무관 검진 결과지(PDF/사진) 텍스트 파싱 &amp; 핵심 지표 자동 추출</p>
+                  </div>
+                </div>
+
+                <div class="arch-part">
+                  <div class="arch-part-badge emerald">PART 2 · 식단 비전</div>
+                  <div class="arch-part-body">
+                    <strong>Food Object Detection</strong>
+                    <p>식단 사진 속 음식 객체 탐지 및 영양성분 데이터베이스 연계</p>
+                  </div>
+                </div>
+
+                <div class="arch-part">
+                  <div class="arch-part-badge purple">PART 3 · 시맨틱 검색</div>
+                  <div class="arch-part-body">
+                    <strong>Qdrant Vector DB</strong>
+                    <p>임베딩 벡터 유사도 기반 의미론적(Semantic) 음식 검색 최적화</p>
+                  </div>
+                </div>
+
+                <div class="arch-part">
+                  <div class="arch-part-badge amber">PART 4 · 추천 &amp; 서빙</div>
+                  <div class="arch-part-body">
+                    <strong>Neo4j Knowledge Graph + LLM</strong>
+                    <p>질환-영양 인과 지식 그래프 탐색 및 FastAPI 맞춤형 리포트 서빙</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Knee to Full Lower Limb -->
+          <article class="project-card-full">
+            <div class="project-info">
+              <div class="project-badge-row">
+                <span class="project-company-badge">크레스콤</span>
+                <span class="project-year">2024 – 2025</span>
+              </div>
+              <h3 class="project-title">Knee to Full Lower Limb 의료영상 합성</h3>
+              <p class="project-summary-text">
+                촬영 장비의 한계와 방사선 피폭 제약으로 촬영이 어려운 하지 전장(Full Lower Limb) X-ray를 무릎(Knee) 단일 영상의 해부학적 기준점을 기반으로 합성하는 Stable Diffusion 생성형 AI 파이프라인을 연구·구현했습니다.
+              </p>
+              <div class="eng-steps">
+                <div class="eng-step">
+                  <span class="eng-step-label">🎯 Goal:</span>
+                  무릎 단일 X-ray 촬영만으로도 전체 다리 정렬 상태(LLA)를 보조 진단할 수 있도록 데이터 증강
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label">🛠️ Tech:</span>
+                  Keypoint Detection (HKA, JLCA, LDFA 등 기준점 산출) ➔ Stable Diffusion Inpainting 파이프라인
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label danger">⚠️ Challenge:</span>
+                  생성 모델의 Hallucination으로 인한 뼈의 길이 및 관절 정렬 각도의 해부학적 왜곡 방지
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label success">📈 Impact:</span>
+                  기하학적 제약(Geometric Constraint)과 키포인트 컨디셔닝을 결합하여 정렬 일관성을 보존하는 합성 파이프라인 검증 성공
+                </div>
+              </div>
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">PyTorch</span>
+                <span class="chip">Stable Diffusion</span>
+                <span class="chip">Keypoint Detection</span>
+                <span class="chip">X-ray Imaging</span>
+              </div>
+            </div>
+            <div class="project-media-box">
+              <img src="assets/knee-to-full-lower-limb.png" alt="Knee to Full Lower Limb 파이프라인 단계별 시각화">
+            </div>
+          </article>
+
+          <!-- Project 3: OA Progression Prediction -->
+          <article class="project-card-full">
+            <div class="project-info">
+              <div class="project-badge-row">
+                <span class="project-company-badge">크레스콤</span>
+                <span class="project-year">2024 – 2025</span>
+              </div>
+              <h3 class="project-title">골관절염(OA) 예후 예측 시계열 멀티모달 모델</h3>
+              <p class="project-summary-text">
+                단일 시점 영상의 한계를 넘어, 환자의 시간에 따른 X-ray 영상 변화(Bag)와 임상 메타데이터(연령, 성별, BMI, 통증 지표 등)를 결합하여 골관절염 진행 상태를 정밀 예측하는 멀티모달 딥러닝 아키텍처를 연구했습니다.
+              </p>
+              <div class="eng-steps">
+                <div class="eng-step">
+                  <span class="eng-step-label">🎯 Goal:</span>
+                  환자의 시계열 영상과 비정형/정형 임상 데이터를 융합해 관절염 악화 조기 예측
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label">🛠️ Tech:</span>
+                  Image Feature Extractor ➔ Multi-Instance Learning(MIL) ➔ TabAttention / TabMixer Aggregation
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label danger">⚠️ Challenge:</span>
+                  고차원 이미지 피처와 저차원 정형 데이터 간의 표현 격차 및 시점 간 불규칙한 촬영 주기 대응
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label success">📈 Impact:</span>
+                  단일 영상 기반 모델 대비 질환 진행 예측 정확도 대폭 향상 및 임상 보조 의사결정 가능성 검증
+                </div>
+              </div>
+              <div class="chips">
+                <span class="chip">PyTorch</span>
+                <span class="chip">Multi-modal</span>
+                <span class="chip">Multi-Instance Learning</span>
+                <span class="chip">TabAttention</span>
+                <span class="chip">Medical Data Analysis</span>
+              </div>
+            </div>
+            <div class="project-media-box">
+              <img src="assets/oa-progression-prediction.png" alt="OA 예후 예측 Multi-modal 아키텍처 다이어그램">
+            </div>
+          </article>
+
+          <!-- Project 4: 하지 전장 이미지 정렬 계측 -->
+          <article class="project-card-full">
+            <div class="project-info">
+              <div class="project-badge-row">
+                <span class="project-company-badge">크레스콤</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">하지 전장 이미지 정렬(LLA) 자동 계측</h3>
+              <p class="project-summary-text">
+                하지 전장 X-ray에서 해부학적 기준점을 탐지하고 정렬 각도를 자동 측정하여, 정형외과 진단 및 무릎 인공관절 수술 계획을 보조하는 컴퓨터 비전 자동화 파이프라인을 개발했습니다.
+              </p>
+              <div class="eng-steps">
+                <div class="eng-step">
+                  <span class="eng-step-label">🎯 Goal:</span>
+                  수작업 계측의 측정자 간 편차를 줄이고 진단에 필요한 각도를 실시간 자동 산출
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label">🛠️ Tech:</span>
+                  Object Detection 기반 Femur Head, Knee, Ankle 위치 탐지 ➔ Keypoint 좌표 연동 각도 계산
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label danger">⚠️ Challenge:</span>
+                  골변형 환자나 골밀도 저하 X-ray에서 랜드마크 경계가 흐려지는 문제 방어
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label success">📈 Impact:</span>
+                  수작업 대비 계측 소요 시간을 초 단위로 단축하고 수술 전후 정렬 평가의 객관적 표준 제공
+                </div>
+              </div>
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">PyTorch</span>
+                <span class="chip">Object Detection</span>
+                <span class="chip">Keypoint Regression</span>
+                <span class="chip">X-ray Analysis</span>
+              </div>
+            </div>
+            <div class="project-media-box">
+              <img src="assets/lower-limb-alignment.png" alt="하지 전장 이미지 정렬 계측 랜드마크 및 각도 측정 결과">
+            </div>
+          </article>
+
+          <!-- Project 5: WSI Brain Tumor Segmentation -->
+          <article class="project-card-full">
+            <div class="project-info">
+              <div class="project-badge-row">
+                <span class="project-company-badge">에이비스</span>
+                <span class="project-year">2022 – 2024</span>
+              </div>
+              <h3 class="project-title">WSI 뇌종양 병리 분할 및 No-code 파이프라인</h3>
+              <p class="project-summary-text">
+                초고해상도 Whole Slide Image(WSI)에서 종양 조직의 4개 핵심 영역(Tumor, Necrosis, Mitosis, MVP)을 분할하고, 비개발자 연구원도 데이터 준비부터 모델 학습·추론까지 1-Click으로 수행할 수 있는 No-code 자동화 도구를 구축했습니다.
+              </p>
+              <div class="eng-steps">
+                <div class="eng-step">
+                  <span class="eng-step-label">🎯 Goal:</span>
+                  기가픽셀 병리 영상에서 미세 병변 분할 및 의료 연구원들의 AI 접근 장벽 해소
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label">🛠️ Tech:</span>
+                  Instance Segmentation ➔ WSI Patch Tiling ➔ Copy &amp; Paste Augmentation ➔ CLI/GUI Tool
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label danger">⚠️ Challenge:</span>
+                  타 클래스 대비 데이터 수가 극도로 부족한 세포분열기(Mitosis) 영역의 심각한 클래스 불균형(Class Imbalance)
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label success">📈 Impact:</span>
+                  도메인 특화 Copy &amp; Paste 기법 도입으로 희귀 클래스 검출 안정화 및 연구원들의 파이프라인 분석 소요 시간 대폭 단축
+                </div>
+              </div>
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">PyTorch</span>
+                <span class="chip">Instance Segmentation</span>
+                <span class="chip">WSI</span>
+                <span class="chip">No-code Automation</span>
+              </div>
+            </div>
+            <div class="project-media-box">
+              <img src="assets/brain-tumor.png" alt="WSI Brain Tumor 분할 Ground Truth vs Prediction 및 No-code 도구">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- More Projects -->
+    <section id="more">
+      <div class="wrap">
+        <div class="section-header-block">
+          <p class="section-label">Additional Research &amp; Projects</p>
+          <h2>추가 연구 및 도메인 과제</h2>
+          <p class="section-intro">
+            혈액 바이오마커 임상 ML 모델링, 병리 전처리 및 딥러닝 조직 분할, 바이오칩 세포 분석 등 의료 AI 및 다양한 산업 도메인에서 수행한 엔지니어링 프로젝트들입니다.
+          </p>
+        </div>
+
+        <div class="project-list">
+          <!-- Additional Project 1: 혈액 바이오마커 기반 췌장암 조기 진단 예측 모델 (PCC) -->
+          <article class="project-card-full">
+            <div class="project-info">
+              <div class="project-badge-row">
+                <span class="project-company-badge">로킷헬스케어</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">혈액 바이오마커 기반 췌장암 조기 진단 예측 모델</h3>
+              <p class="project-summary-text">
+                임상 단독 검사의 민감도가 부족한 CA19-9의 한계를 극복하기 위해, 4종 혈액 단백 마커(CA19-9, TTR, ApoA1, CEA)와 이종 앙상블(XGBoost + TabNet)을 결합하여 암을 놓치지 않는 배제 검사(Rule-out) 목적의 고신뢰성 진단 예측 파이프라인을 구축했습니다.
+              </p>
+              <div class="eng-steps">
+                <div class="eng-step">
+                  <span class="eng-step-label">🎯 Goal:</span>
+                  위음성(암 누락)을 최소화하고 민감도 90% 이상을 안정적으로 보장하는 췌장암 배제 검사 모델 구축
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label">🛠️ Tech:</span>
+                  Core-4 마커 단변량 선별 ➔ 4종 이종 모델(XGBoost, TabNet 등) 52구성 격자 탐색 ➔ AUC 가중 Soft Voting 앙상블
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label danger">⚠️ Challenge:</span>
+                  MICE Imputer 학습 fold 격리 및 구조적 결측 변수(HE4) 제거로 데이터 누수(Data Leakage) 원천 차단
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label success">📈 Impact:</span>
+                  Test AUC 0.990, 민감도 92.5%(CA19-9 단독 대비 +24%p), 외부 코호트(CancerSEEK 905명) 검증으로 일반화 성능 실증
+                </div>
+              </div>
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">PyTorch-TabNet</span>
+                <span class="chip">XGBoost</span>
+                <span class="chip">Clinical Biomarker</span>
+                <span class="chip">Ensemble</span>
+                <span class="chip">External Validation</span>
+              </div>
+            </div>
+            <div class="project-media-box">
+              <div class="pcc-visual" aria-label="췌장암 진단 예측 성능 요약">
+                <div class="pcc-header">
+                  <span class="pcc-header-title">Diagnostic Performance</span>
+                  <span class="pcc-header-tag">Rule-out 검사 최적화</span>
+                </div>
+                <div class="pcc-kpis">
+                  <div class="pcc-kpi highlight">
+                    <strong>0.990</strong>
+                    <span>Test AUC</span>
+                  </div>
+                  <div class="pcc-kpi highlight">
+                    <strong>92.5%</strong>
+                    <span>민감도 (62/67)</span>
+                  </div>
+                  <div class="pcc-kpi">
+                    <strong>96.4%</strong>
+                    <span>특이도</span>
+                  </div>
+                </div>
+                <div class="pcc-bars">
+                  <div class="pcc-bar-title">
+                    <span>마커 조합별 민감도 (특이도 95% 고정)</span>
+                    <span style="color:#0f6b5c; font-weight:800;">+24%p 향상</span>
+                  </div>
+                  <div class="pcc-bar-row">
+                    <span>CA19-9 단독</span>
+                    <div class="pcc-bar-track"><div class="pcc-bar-fill" style="width: 71.6%;"></div></div>
+                    <span class="pcc-bar-val">71.6%</span>
+                  </div>
+                  <div class="pcc-bar-row">
+                    <span>+ ApoA1</span>
+                    <div class="pcc-bar-track"><div class="pcc-bar-fill active" style="width: 92.5%;"></div></div>
+                    <span class="pcc-bar-val">92.5%</span>
+                  </div>
+                  <div class="pcc-bar-row">
+                    <span>+ TTR</span>
+                    <div class="pcc-bar-track"><div class="pcc-bar-fill active" style="width: 94.0%;"></div></div>
+                    <span class="pcc-bar-val">94.0%</span>
+                  </div>
+                  <div class="pcc-bar-row">
+                    <span>+ CEA (Core-4)</span>
+                    <div class="pcc-bar-track"><div class="pcc-bar-fill active" style="width: 95.5%;"></div></div>
+                    <span class="pcc-bar-val">95.5%</span>
+                  </div>
+                </div>
+                <a class="pcc-detail-link" href="pcc.html" target="_blank">
+                  📄 췌장암 예측 상세 분석 리포트(pcc.html) 전문 보기 ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Additional Project 2: WSI Deep Learning Tissue Segmentation -->
+          <article class="project-card-full">
+            <div class="project-info">
+              <div class="project-badge-row">
+                <span class="project-company-badge">에이비스</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">WSI Deep Learning Tissue Segmentation</h3>
+              <p class="project-summary-text">
+                기존 Rule-based 조직 분할의 오탐 및 배경 분리 한계를 극복하기 위해, 기가픽셀 Whole Slide Image에서 유효 조직 영역(Tissue ROI)을 정밀 추출하는 Deep Learning 기반 분할 파이프라인을 구축했습니다.
+              </p>
+              <div class="eng-steps">
+                <div class="eng-step">
+                  <span class="eng-step-label">🎯 Goal:</span>
+                  기가픽셀 병리 슬라이드에서 배경/유리/이물질을 배제하고 유효 조직 영역만 고속 분할
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label">🛠️ Tech:</span>
+                  Deep Learning Segmentation ➔ Multi-scale Tissue Masking ➔ Whole Slide Feature Extraction
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label danger">⚠️ Challenge:</span>
+                  기포, 먼지, 마커 펜 흔적 등 병리 슬라이드 상의 아티팩트 오인식 방어
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label success">📈 Impact:</span>
+                  유효 조직 영역만 선별 추출하여 WSI 전체 분석 연산 시간 대폭 단축 및 슬라이드 대표 Feature 품질 극대화
+                </div>
+              </div>
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">PyTorch</span>
+                <span class="chip">Deep Learning</span>
+                <span class="chip">Tissue Segmentation</span>
+                <span class="chip">WSI</span>
+              </div>
+            </div>
+            <div class="project-media-box">
+              <img src="assets/wsi-tissue-segmentation.png" alt="Whole Slide Image 딥러닝 기반 조직 분할 결과">
+            </div>
+          </article>
+
+          <!-- Additional Project 3: WSI Stain Normalization -->
+          <article class="project-card-full">
+            <div class="project-info">
+              <div class="project-badge-row">
+                <span class="project-company-badge">에이비스</span>
+                <span class="project-year">2023</span>
+              </div>
+              <h3 class="project-title">WSI Stain Normalization (병리 염색 정규화)</h3>
+              <p class="project-summary-text">
+                스캐너 기기 및 시약 염색 조건에 따른 병리 이미지의 색상 편차를 보정하여 딥러닝 모델의 도메인 일반화 성능을 극대화했습니다.
+              </p>
+              <div class="eng-steps">
+                <div class="eng-step">
+                  <span class="eng-step-label">🎯 Goal:</span>
+                  다기관 병리 데이터셋 간의 색감·명암 편차 제거 및 모델의 도메인 적응력(Domain Adaptation) 향상
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label">🛠️ Tech:</span>
+                  Reinhard / Macenko Stain Normalization ➔ Color Deconvolution ➔ H&amp;E 성분 분리
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label danger">⚠️ Challenge:</span>
+                  과도한 정규화로 인한 세포 핵 및 간질 조직 본연의 염색 특성 왜곡 방지
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label success">📈 Impact:</span>
+                  색상 변동성에 취약한 병리 분석 모델의 외부 검증 성능 편차를 완화하고 파이프라인 전처리 표준화
+                </div>
+              </div>
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">OpenCV</span>
+                <span class="chip">Stain Normalization</span>
+                <span class="chip">Pathology</span>
+              </div>
+            </div>
+            <div class="project-media-box">
+              <img src="assets/stain-normalization.png" alt="WSI Stain Normalization 전후 비교">
+            </div>
+          </article>
+
+          <!-- Additional Project 4: Cell Detection & Classification -->
+          <article class="project-card-full">
+            <div class="project-info">
+              <div class="project-badge-row">
+                <span class="project-company-badge">에이비스</span>
+                <span class="project-year">2023</span>
+              </div>
+              <h3 class="project-title">Cell Detection &amp; Classification (바이오칩 세포 분석)</h3>
+              <p class="project-summary-text">
+                바이오칩 현미경 영상에서 마이크로 웰 내 미세 세포 객체를 고속 자동 검출(Detection)하고, 세포 형태 및 응집 특성에 따른 다중 클래스(Mono / Poly 등 Multi-class) 분류를 수행하는 AI 파이프라인을 구축했습니다.
+              </p>
+              <div class="eng-steps">
+                <div class="eng-step">
+                  <span class="eng-step-label">🎯 Goal:</span>
+                  수작업 세포 계측의 한계를 극복하고 바이오칩 내 미세 세포 객체를 고속·자동 전수 계수
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label">🛠️ Tech:</span>
+                  Microscopic Object Detection ➔ Single/Multiple Cell ROI 추출 ➔ Multi-class Classification (Mono / Poly)
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label danger">⚠️ Challenge:</span>
+                  마이크로 웰의 강한 빛 반사, 웰 경계의 비선형 왜곡 및 미세 세포의 크기 변동성 방어
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label success">📈 Impact:</span>
+                  웰 주변 미세 세포 탐지 신뢰도 확보 및 단일/군집 세포 정량 분석 자동화로 연구 분석 소요 시간 대폭 단축
+                </div>
+              </div>
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">PyTorch</span>
+                <span class="chip">Object Detection</span>
+                <span class="chip">Multi-class Classification</span>
+                <span class="chip">Bio Imaging</span>
+              </div>
+            </div>
+            <div class="project-media-box">
+              <img src="assets/cell-detection.png" alt="바이오칩 내 미세 세포 검출 및 분류 결과">
+            </div>
+          </article>
+
+          <!-- Additional Project 5: 마사회 도해서 작성 보조 모델 개발 -->
+          <article class="project-card-full">
+            <div class="project-info">
+              <div class="project-badge-row">
+                <span class="project-company-badge">에이비스</span>
+                <span class="project-year">2022 – 2023</span>
+              </div>
+              <h3 class="project-title">마사회 - 도해서 작성 보조 모델 개발</h3>
+              <p class="project-summary-text">
+                경주마의 등록 및 개체 식별을 위해 수작업으로 스케치하던 도해서(개체식별도) 작성을 자동화하고자, 말의 안면 백반(유성) 및 고유 신체 특징을 정밀 분할(Segmentation)하는 컴퓨터 비전 모델을 개발했습니다.
+              </p>
+              <div class="eng-steps">
+                <div class="eng-step">
+                  <span class="eng-step-label">🎯 Goal:</span>
+                  수작업 도해서 작성의 주관적 편차를 줄이고, 말의 고유 신체 특징(백반, 유성 등)을 정밀 자동 분할
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label">🛠️ Tech:</span>
+                  말 안면 ROI 검출 ➔ Fine-grained Segmentation ➔ 백반 경계선 마스크 추출
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label danger">⚠️ Challenge:</span>
+                  털의 결, 빛 반사, 오염 및 개체마다 다양한 백반 형태의 모호한 경계 극복
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label success">📈 Impact:</span>
+                  마사회 도메인 전문가 기준에 부합하는 정밀 마스크 생성 및 도해서 작성 업무 효율 대폭 향상
+                </div>
+              </div>
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">PyTorch</span>
+                <span class="chip">Instance Segmentation</span>
+                <span class="chip">Computer Vision</span>
+                <span class="chip">Domain AI</span>
+              </div>
+            </div>
+            <div class="project-media-box">
+              <img src="assets/horse-diagram.png" alt="마사회 도해서 작성 보조 말 안면 백반 분할 결과">
+            </div>
+          </article>
+
+          <!-- Additional Project 6: 스마트팜 딸기 숙도 진단 -->
+          <article class="project-card-full">
+            <div class="project-info">
+              <div class="project-badge-row">
+                <span class="project-company-badge">에이비스</span>
+                <span class="project-year">2022</span>
+              </div>
+              <h3 class="project-title">스마트팜 모바일 딸기 숙도 진단 알고리즘</h3>
+              <p class="project-summary-text">
+                모바일 실시간 환경에서 작동하는 경량 Instance Segmentation 모델로 딸기 객체 ROI를 추출하고, HSV 색공간 분석을 통해 최적의 수확 적기(착색도 75% 기준)를 자동 판별하는 알고리즘을 개발했습니다.
+              </p>
+              <div class="eng-steps">
+                <div class="eng-step">
+                  <span class="eng-step-label">🎯 Goal:</span>
+                  온실 현장 모바일 디바이스에서 실시간 과실 검출 및 숙도 기반 수확 적기 자동 산출
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label">🛠️ Tech:</span>
+                  Instance Segmentation ➔ 과실 ROI 추출 ➔ HSV Color Space 변환 ➔ 착색률 정량화
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label danger">⚠️ Challenge:</span>
+                  비닐하우스 내 자연광 변동(그림자, 직사광선) 및 잎사귀 가림 환경에서의 오검출 최소화
+                </div>
+                <div class="eng-step">
+                  <span class="eng-step-label success">📈 Impact:</span>
+                  착색도 75% 이상 수확 적기 판별 자동화 및 모바일 온디바이스 실시간 연산 효율 달성
+                </div>
+              </div>
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">Instance Segmentation</span>
+                <span class="chip">Mobile Vision</span>
+                <span class="chip">HSV Color Analysis</span>
+              </div>
+            </div>
+            <div class="project-media-box">
+              <img src="assets/strawberry-harvest.png" alt="스마트팜 딸기 숙도 진단 결과">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume CTA Banner -->
+    <section class="resume-cta-section">
+      <div class="wrap">
+        <div class="cta-box">
+          <p class="section-label">Resume &amp; Career</p>
+          <h2 style="margin-bottom: 14px;">전체 경력 및 직무 기술서</h2>
+          <p style="color: var(--text-muted); margin-bottom: 28px; word-break: keep-all;">
+            회사별 전체 직무 내역, 전체 기술 스택, 학력 및 자기소개서는 이력서 페이지에서 확인하실 수 있습니다.
+          </p>
+          <a class="button" href="resume.html" style="padding: 14px 28px; font-size: 1rem;">
+            📄 상세 이력서(Resume) 보러가기 →
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="wrap">
+      <p class="section-label" style="color: #60a5fa;">Contact</p>
+      <h2>함께 고민하고 해결할<br>AI 문제를 기다립니다.</h2>
+      <div class="contact-links-row">
+        <a href="mailto:bgw2001@gmail.com">bgw2001@gmail.com</a>
+        <a href="resume.html">이력서 보기 ↗</a>
+        <a href="https://github.com/Kang812" target="_blank" rel="noreferrer">github.com/Kang812 ↗</a>
+        <a href="https://www.nature.com/articles/s41467-026-72956-x#Sec37" target="_blank" rel="noreferrer">Nature Communications 논문 ↗</a>
+      </div>
+      <p class="footer-note">© 변강원. 본 포트폴리오의 프로젝트 내용과 시각 자료는 공개 가능한 범위 내에서 재구성되었습니다.</p>
+    </div>
+  </footer>
+</body>
+</html>
