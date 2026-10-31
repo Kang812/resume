@@ -189,7 +189,7 @@
     /* Stats Grid */
     .stat-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 16px;
       margin-top: 24px;
     }
@@ -658,7 +658,7 @@
 
     /* Footer */
     footer {
-      padding: 64px 0 54px;
+      padding: 36px 0;
       background: #0f172a;
       color: #94a3b8;
     }
@@ -722,8 +722,6 @@
         <a href="#about">소개</a>
         <a href="#projects">대표 프로젝트</a>
         <a href="#more">추가 연구</a>
-        <a href="#contact">연락처</a>
-        <a class="nav-resume-btn" href="resume.html">이력서(Resume) 보기 ↗</a>
       </div>
     </div>
   </nav>
@@ -735,11 +733,10 @@
         <div class="eyebrow">Medical AI &amp; Computer Vision Engineer</div>
         <h1>의료영상의 한계를 넘어,<br>실제 작동하는 AI를 구현합니다.</h1>
         <p class="lead">
-          X-ray·Whole Slide Image(WSI) 기반 컴퓨터 비전 모델 개발부터 생성형 AI(Stable Diffusion) 의료 파이프라인, OCR·LLM 기반 헬스케어 서비스 서빙까지 전 주기를 책임져 온 4년 8개월 차 AI 엔지니어 변강원입니다.
+          X-ray·Whole Slide Image(WSI) 기반 컴퓨터 비전 모델 개발부터 생성형 AI(Stable Diffusion) 의료 파이프라인, OCR·LLM 기반 헬스케어 서비스 서빙까지 전 주기를 설계하고 구현해 온 AI 엔지니어 변강원입니다.
         </p>
         <div class="hero-bottom">
           <a class="button" href="#projects">대표 프로젝트 살펴보기 ↓</a>
-          <a class="button secondary" href="resume.html">이력서 보기 →</a>
         </div>
       </div>
     </header>
@@ -755,10 +752,6 @@
           </p>
         </div>
         <div class="stat-grid">
-          <div class="stat">
-            <strong>4년 8개월</strong>
-            <span>AI / Computer Vision 실무 연구·개발</span>
-          </div>
           <div class="stat">
             <strong>Multi-Modality</strong>
             <span>X-ray · WSI · 관절경 · 비정형 텍스트 융합</span>
@@ -1354,36 +1347,12 @@
         </div>
       </div>
     </section>
-
-    <!-- Resume CTA Banner -->
-    <section class="resume-cta-section">
-      <div class="wrap">
-        <div class="cta-box">
-          <p class="section-label">Resume &amp; Career</p>
-          <h2 style="margin-bottom: 14px;">전체 경력 및 직무 기술서</h2>
-          <p style="color: var(--text-muted); margin-bottom: 28px; word-break: keep-all;">
-            회사별 전체 직무 내역, 전체 기술 스택, 학력 및 자기소개서는 이력서 페이지에서 확인하실 수 있습니다.
-          </p>
-          <a class="button" href="resume.html" style="padding: 14px 28px; font-size: 1rem;">
-            📄 상세 이력서(Resume) 보러가기 →
-          </a>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- Footer -->
-  <footer id="contact">
+  <footer>
     <div class="wrap">
-      <p class="section-label" style="color: #60a5fa;">Contact</p>
-      <h2>함께 고민하고 해결할<br>AI 문제를 기다립니다.</h2>
-      <div class="contact-links-row">
-        <a href="mailto:bgw2001@gmail.com">bgw2001@gmail.com</a>
-        <a href="resume.html">이력서 보기 ↗</a>
-        <a href="https://github.com/Kang812" target="_blank" rel="noreferrer">github.com/Kang812 ↗</a>
-        <a href="https://www.nature.com/articles/s41467-026-72956-x#Sec37" target="_blank" rel="noreferrer">Nature Communications 논문 ↗</a>
-      </div>
-      <p class="footer-note">© 변강원. 본 포트폴리오의 프로젝트 내용과 시각 자료는 공개 가능한 범위 내에서 재구성되었습니다.</p>
+      <p class="footer-note" style="margin-top: 0;">© 변강원. 본 포트폴리오의 프로젝트 내용과 시각 자료는 공개 가능한 범위 내에서 재구성되었습니다.</p>
     </div>
   </footer>
 </body>
